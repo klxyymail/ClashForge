@@ -2514,3 +2514,4 @@ if __name__ == '__main__':
     # ]
 
     work(links, check=True, only_check=False, allowed_types=["ss","hysteria2","hy2","vless","vmess","trojan"])
+
