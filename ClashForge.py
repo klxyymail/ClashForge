@@ -2053,6 +2053,9 @@ class ClashConfig:
     def update_group_proxies(self, group_name: str, results: List[ProxyTestResult]):
         """更新指定组的代理列表，仅保留有效节点并按延迟排序"""
         # 移除失效节点
+
+        if group_name == "节点选择":
+            return
         self.remove_invalid_proxies(results)
 
         # 获取有效节点并按延迟排序
