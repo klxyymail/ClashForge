@@ -60,6 +60,34 @@ proxies:
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
+  name: 🇱🇻LV拉脱维亚丨yoyapai.com
+  port: 443
+  reality-opts:
+    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
+    short-id: b28db60d77c50b4f
+  server: 193.163.203.170
+  servername: yandex.ru
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
+- name: 🇮🇷伊朗丨yoyapai.com
+  network: xhttp
+  port: 6008
+  server: link.mrpgd.ir
+  servername: cafebazaar.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: e19f406e-0f0f-4abd-9861-a3d2d213b650
+  xhttp-opts:
+    host: cafebazaar.ir
+    mode: stream-up
+    path: /assets
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
   name: 🇺🇸US美国丨yoyapai.com_16
   port: 443
   reality-opts:
@@ -129,14 +157,17 @@ proxies:
   sni: rmgyvpn.rest
   type: hysteria2
   udp: true
-- name: 🇬🇧GB-82.38.31.181-0082
-  type: ss
-  server: 82.38.31.181
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: AU澳大利亚(mibei77.com 米贝节点分享)_1
+  obfs: salamander
+  obfs-password: a34f3990b69f44bfa0d32385
+  password: a34f3990b69f44bfa0d32385
+  port: 20000
+  ports: 20000-30000
+  server: 137.23.3.91
+  skip-cert-verify: true
+  sni: rmgyvpn.rest
+  type: hysteria2
   udp: true
-  original_link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.181:8080#🇬🇧GB-82.38.31.181-0082
 - name: 🇺🇦UA-104.253.216.227-0160
   type: ss
   server: staging.lastilhame.monster
@@ -145,21 +176,14 @@ proxies:
   password: G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP
   udp: true
   original_link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHOVp1TE41REU5cXFvdVRad1lVY3ZZc0RKeDhneUwxbkN1M043eVJaRmpQbVlLaHpTaThHa3BWdWV4bVRIQXoydXZjRXJLa2V4MUsyY2VSMkdIM0w0NDRIUk5uTjFZcFA=@staging.lastilhame.monster:49917#🇺🇦UA-104.253.216.227-0160
-- name: 🏁RELAY-104.21.41.92-0390
-  type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: guanwang.awsno.com
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: guanwang.awsno.com
-  original_link: vmess://ewogICAgImFkZCI6ICJndWFud2FuZy5hd3Nuby5jb20iLAogICAgImFpZCI6IDAsCiAgICAiaG9zdCI6ICJndWFud2FuZy5hd3Nuby5jb20iLAogICAgImlkIjogIjZhODlhMjE1LTIyYmYtNGJkNy05NjQyLWI5NWIyZTA5NTgzYSIsCiAgICAibmV0IjogIndzIiwKICAgICJwYXRoIjogIi9obHMvY2N0djVwaGQubTN1OCIsCiAgICAicG9ydCI6IDQ0MywKICAgICJwcyI6ICLwn4+BUkVMQVktMTA0LjIxLjQxLjkyLTAzOTAiLAogICAgInRscyI6ICJ0bHMiLAogICAgInR5cGUiOiAiYXV0byIsCiAgICAic2VjdXJpdHkiOiAiYXV0byIsCiAgICAic2tpcC1jZXJ0LXZlcmlmeSI6IGZhbHNlLAogICAgInNuaSI6ICJndWFud2FuZy5hd3Nuby5jb20iCn0=
+- name: 🇯🇵JP-154.36.158.197-0169
+  type: ss
+  server: 154.36.158.197
+  port: 8388
+  cipher: aes-256-gcm
+  password: BeaUf9c0AEWH40Pu
+  udp: true
+  original_link: ss://YWVzLTI1Ni1nY206QmVhVWY5YzBBRVdINDBQdQ==@154.36.158.197:8388#🇯🇵JP-154.36.158.197-0169
 - name: 🇸🇬SG-91.243.81.248-4679
   type: trojan
   server: apt-midge.rooster465.autos
@@ -168,14 +192,6 @@ proxies:
   sni: ''
   skip-cert-verify: false
   original_link: trojan://IQ68037294@apt-midge.rooster465.autos:443?security=tls#🇸🇬SG-91.243.81.248-4679
-- name: 🇳🇱NL-78.142.194.96-4836
-  type: trojan
-  server: nl-1.tr202607.com
-  port: 443
-  password: LSS6HLnp7IeEEJUcox
-  sni: ''
-  skip-cert-verify: false
-  original_link: trojan://LSS6HLnp7IeEEJUcox@nl-1.tr202607.com:443?security=tls#🇳🇱NL-78.142.194.96-4836
 - name: 🇱🇺LU-85.234.78.169-4841
   type: trojan
   server: outgoing-cockatoo.rooster465.autos
@@ -296,18 +312,136 @@ proxies:
   sni: ''
   skip-cert-verify: false
   original_link: trojan://ND91608427@learning-leopard.rooster465.autos:443?security=tls#🇯🇵JP-85.234.83.230-4912
-- name: 🇨🇦CA-155.138.138.2-4786
+- name: 🏁RELAY-104.17.147.222-1288
+  server: 104.17.147.222
+  port: 80
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: 🏁RELAY-104.19.215.84-1291
+  server: us5-1.998998.best
+  port: 443
+  type: vmess
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /androirfdsreoightrjh?ed=2560
+    headers:
+      Host: server4.9966338.xyz
+- name: 🏁RELAY-104.18.0.22-1293
+  server: us16-4.998998.best
+  port: 443
+  type: vmess
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /efrsdioy98wert
+    headers:
+      Host: server1.9966338.xyz
+- name: 🇳🇱NL-50.7.41.118-2330
+  server: 50.7.41.118
+  port: 17001
+  type: ss
+  cipher: aes-256-gcm
+  password: I6o9NnialYLMEjVt28RF4dpjmr9wMvNL
+- name: 🇺🇸US-23.254.194.215-2392
+  server: 23.254.194.215
+  port: 8080
+  type: vmess
+  uuid: 3c75a551-81d6-46d0-876d-79519719bb22
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  servername: www.bing.com
+  network: ws
+  ws-opts:
+    path: 3c75a551-81d6-46d0-876d-79519719bb22-vm
+    headers:
+      Host: www.bing.com
+- name: 🇨🇦CA-155.138.138.2-5171
   server: ca.tronsg.com
   port: 443
   type: trojan
   password: Trojan@82164024
   skip-cert-verify: false
-- name: DE_speednode_0002
-  server: 213.109.163.119
+- name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080
+  type: ssr
+  server: 107.151.182.253
+  port: 8080
+  password: 14fFPrbezE3HDZzsMOr6
+  cipher: rc4-md5
+  protocol: origin
+  obfs: plain
+- name: 日本1
+  server: jpgmo101-cdn-route.couldflare-cdn.com
   port: 443
   type: http
-  password: None
   tls: true
+  skip-cert-verify: false
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+  password: exaxgqkKkd0TAMrCxeonWg==
+- name: 日本2
+  server: jpgmo102-cdn-route.couldflare-cdn.com
+  port: 443
+  type: http
+  tls: true
+  skip-cert-verify: false
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+  password: exaxgqkKkd0TAMrCxeonWg==
+- name: 美国2
+  server: usgp1-cdn-route.couldflare-cdn.com
+  port: 443
+  type: http
+  tls: true
+  skip-cert-verify: false
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+  password: exaxgqkKkd0TAMrCxeonWg==
+- name: 美国3
+  server: usgp3-cdn-route.couldflare-cdn.com
+  port: 443
+  type: http
+  tls: true
+  skip-cert-verify: false
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+  password: exaxgqkKkd0TAMrCxeonWg==
+- name: 美国5
+  server: usgp2-cdn-route.couldflare-cdn.com
+  port: 443
+  type: http
+  tls: true
+  skip-cert-verify: false
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+  password: exaxgqkKkd0TAMrCxeonWg==
+- name: 🇫🇮_FI_芬兰
+  type: vless
+  server: hw3.divarkhaghazi.com.
+  port: 465
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  network: ws
+  servername: hw3.divarkhaghazi.com.
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
   skip-cert-verify: true
   udp: true
 - name: 🛸69@oneclickvpnkeys
@@ -316,16 +450,6 @@ proxies:
   server: 198.46.146.118
   skip-cert-verify: true
   sni: bing.com
-  tls: false
-  type: hysteria2
-- name: 🛸96@oneclickvpnkeys
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-  password: 5fa748137b6d822308eea4611f474ad5
-  port: 443
-  server: 155.117.19.17
-  skip-cert-verify: true
-  sni: www.bing.com
   tls: false
   type: hysteria2
 - name: 🤩96@oneclickvpnkeys
@@ -369,6 +493,25 @@ proxies:
   sni: hy2.123266.xyz
   tls: false
   type: hysteria2
+- name: '@vmess_ir'
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  port: 5010
+  server: nas.aizhzo.com
+  skip-cert-verify: false
+  sni: nas.aizhzo.com
+  tls: false
+  type: hysteria2
+- name: 🇦🇲[www.v2nodes.com] vless-AM-1...
+  network: ws
+  port: 10004
+  server: 194.36.37.59
+  tls: false
+  type: vless
+  uuid: f7376394-cd54-11f1-bb6a-bff6d0326f6a
+  ws-opts:
+    path: /vpnjantit
 - name: 🇧🇾[www.v2nodes.com] vless-BY-1...
   network: ws
   port: 14430
@@ -380,6 +523,100 @@ proxies:
     headers:
       Host: 95.128.71.79
     path: /vless
+- name: 🇭🇰 香港 | HKG 5
+  password: 87c6ad7b-e450-44a8-8088-bc2234d43de1
+  port: 24318
+  server: svip.skycon808.com
+  skip-cert-verify: true
+  sni: hk08.jdddyy01.cc
+  type: anytls
+  udp: true
+- name: 🇸🇪 瑞典 | SWE
+  password: 13f0acfa-38c1-4e82-a758-583aa31740df
+  port: 60005
+  server: svip.skycon808.com
+  skip-cert-verify: true
+  type: anytls
+  udp: true
+- name: DE_speednode_0002
+  password: None
+  port: 443
+  server: 213.109.163.119
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇭🇰 香港 | HKG 8
+  server: 67.159.49.29
+  port: 2091
+  type: vless
+  uuid: 76b6a658-ce80-4500-b24d-404c94639ac6
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
+    short-id: 08a4b1f473932632
+  servername: www.apple.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: 45.9.118.177
+  port: 8443
+  type: vless
+  uuid: 88c4ce99-31f1-4329-912d-2a3564b3d58b
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: apple.com
+  client-fingerprint: firefox
+  network: tcp
+- name: 🇺🇸 美国 | USA 10
+  server: 31.59.218.43
+  port: 443
+  type: vless
+  uuid: 5131b5e9-2c3c-44a0-8f18-0641f3f21cac
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: Pb37t99NiJqm-lsTi4tucPFqRXIsek-5G5dqjIqVfxE
+    short-id: 15c87d0b99c0d132
+  servername: tlokexcm.himoy.space
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🐙32@oneclickvpnkeys
+  password: d4ca9415f0eac7897472e1e5b86d2e96
+  port: 443
+  server: 50.7.38.243
+  sni: promo.betust.net
+  tls: false
+  type: hysteria2
+- name: 🇹🇼 🇨🇳 台湾 | TWN-DnEg
+  password: 87c6ad7b-e450-44a8-8088-bc2234d43de1
+  port: 47531
+  server: svip.skycon808.com
+  skip-cert-verify: true
+  sni: tw15.swiftrelay.cc
+  type: anytls
+  udp: true
+- name: 美国 444
+  type: vless
+  network: ws
+  server: vpn.cintaku.qzz.io
+  port: 443
+  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
+  servername: vpn.cintaku.qzz.io
+  skip-cert-verify: false
+  tls: true
+  udp: true
+  tfo: false
+  client-fingerprint: unsafe
+  ws-opts:
+    headers:
+      Host: vpn.cintaku.qzz.io
+    path: /vlessws
 - name: 巴西 041
   type: vless
   network: ws
@@ -405,46 +642,32 @@ proxies:
   tls: true
   alterId: 0
   cipher: auto
-- name: 美国 852
-  type: vmess
-  network: ws
-  server: us5-1.998998.best
-  port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: server4.9966338.xyz
-    path: /androirfdsreoightrjh?ed=2560
-- name: 美国 854
-  type: vmess
-  network: ws
-  server: us16-4.998998.best
-  port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: server1.9966338.xyz
-    path: /efrsdioy98wert
-- name: 🇩🇪_德国_16
+- name: 🇰🇷_韩国_15
   type: vless
-  server: wifi12.jzxc.digital
+  server: 158.247.241.102
   port: 443
-  uuid: 3d87029f-b55b-487d-aea6-6049c8668ff1
-  servername: wifi12.jzxc.digital
+  uuid: 583cc910-b57c-4dd0-a4a7-cea51a30b032
+  servername: www.apple.com
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   reality-opts:
-    public-key: 90gg8QRDqwmrelQBiQ159MlmdUreo4h1-yBgRmp7U2c
-    short-id: 082e4d45beed1487
+    public-key: GR_zPAgxF9PZ70Z9UpSmMlcd2STyoAC0fZTSHkTTCGE
+    short-id: ca193e889d958f81
+  skip-cert-verify: true
+  udp: true
+- name: 🇳🇱_荷兰_17
+  type: vless
+  server: 213.152.165.203
+  port: 2091
+  uuid: 76b6a658-ce80-4500-b24d-404c94639ac6
+  servername: www.apple.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
+    short-id: 08a4b1f473932632
   skip-cert-verify: true
   udp: true
 - name: 🇩🇪_德国_21
@@ -470,20 +693,6 @@ proxies:
   reality-opts:
     public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM
     short-id: 8a9725533854a7e8
-  skip-cert-verify: true
-  udp: true
-- name: 🇪🇪_爱沙尼亚_34
-  type: vless
-  server: ee1.mycloud1.org
-  port: 443
-  uuid: 605dea9b-b485-45c9-af9b-cc2b0195023c
-  servername: ee1.mycloud1.org
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E
-    short-id: afee962d
   skip-cert-verify: true
   udp: true
 - name: 🇭🇰_香港_38
@@ -528,6 +737,20 @@ proxies:
     short-id: 38d72071
   skip-cert-verify: true
   udp: true
+- name: 🇺🇸_美国_43
+  type: vless
+  server: 50.7.245.205
+  port: 2093
+  uuid: 0b418782-e023-447e-ba99-e66b84ff118d
+  servername: www.apple.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM
+    short-id: 8a9725533854a7e8
+  skip-cert-verify: true
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_83153416
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
@@ -539,28 +762,17 @@ proxies:
   server: 13.215.227.70
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_450a5730
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 817aa69.default.nintendo.com:112719
-    mode: tls
-  port: 2377
-  server: 18.143.63.164
-  type: ss
-  udp: true
-- name: C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_7b001401
-  password: '1234'
-  port: 2080
-  server: 54.255.133.243
-  skip-cert-verify: true
-  type: http
-  username: '1234'
 - name: D🔴🇭🇰hos[📺🎭🎪🎞️]_dokng.com_054bd55d
   port: 10808
   server: 123.58.219.171
   type: socks5
+- name: C🟠🇭🇰hos_dokng.com_099454ad
+  password: '111'
+  port: 11211
+  server: 47.243.173.50
+  skip-cert-verify: true
+  type: socks5
+  username: '111'
 - name: C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_f4e9aa61
   password: '1234'
   port: 2080
@@ -568,10 +780,31 @@ proxies:
   skip-cert-verify: true
   type: http
   username: '1234'
+- name: D🔴🇸🇬hos_dokng.com_9a3d7a66
+  password: '1234'
+  port: 2080
+  server: 13.229.236.228
+  skip-cert-verify: true
+  type: http
+  username: '1234'
+- name: C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_0360a354
+  password: '1234'
+  port: 2080
+  server: 13.212.249.115
+  skip-cert-verify: true
+  type: http
+  username: '1234'
 - name: C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_02ba6e35
   password: '1234'
   port: 2080
   server: 13.229.54.109
+  skip-cert-verify: true
+  type: http
+  username: '1234'
+- name: C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_e68b3244
+  password: '1234'
+  port: 2080
+  server: 52.221.234.145
   skip-cert-verify: true
   type: http
   username: '1234'
@@ -606,35 +839,14 @@ proxies:
   protocol-param: 218522:0hfCJk
   server: api.meituan88.com
   type: ssr
-- cipher: rc4-md5
-  name: C🟠🇺🇸hos[🎬🤖📺🎭]_dokng.com_07cae35f
-  obfs: plain
-  obfs-param: f7d23929.douyin.com
-  password: di15PV
-  port: 39266
-  protocol: auth_aes128_md5
-  protocol-param: 23929:563537032
-  server: api.meituan88.com
-  type: ssr
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: C🟠🇩🇪hos[🎬🤖📺🎭]_dokng.com_db0b26fa
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 90gg8QRDqwmrelQBiQ159MlmdUreo4h1-yBgRmp7U2c
-    short-id: 082e4d45beed1487
-  server: 5.175.161.195
-  servername: wifi12.jzxc.digital
-  tls: true
-  type: vless
+- name: D🔴🇸🇬hos[🎬🤖📺🎭]_dokng.com_f29f736e
+  password: 29086912-33e4-4e06-ba2b-60f1a195864f
+  port: 24999
+  server: tjxjp.m2k699.com
+  skip-cert-verify: true
+  sni: www.itunes.com
+  type: trojan
   udp: true
-  uuid: 3d87029f-b55b-487d-aea6-6049c8668ff1
-  xudp: true
 - name: C🟠🇺🇸hos[🎬🤖📺🎭]_dokng.com_ea2318bd
   password: 29086912-33e4-4e06-ba2b-60f1a195864f
   port: 24999
@@ -651,19 +863,6 @@ proxies:
   tls: true
   type: http
   username: 'null'
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: A🟢🇹🇷res[📺🎪✨🎞️]_dokng.com_f3b97fa9
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 193.223.104.127
-  servername: ozon.ru
-  tls: true
-  type: vless
-  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
 - name: A🟢🇩🇪res[🎬🤖📺🎭]_dokng.com_b5bafa8e
   password: null
   port: 443
@@ -672,18 +871,6 @@ proxies:
   tls: true
   type: http
   username: null
-- alterId: '0'
-  cipher: auto
-  name: C🟠🇺🇸hos[🎬🤖📺🎭]_dokng.com_b8372adb
-  network: ws
-  port: 8080
-  server: 23.254.194.215
-  type: vmess
-  uuid: 3c75a551-81d6-46d0-876d-79519719bb22
-  ws-opts:
-    headers:
-      Host: www.bing.com
-    path: 3c75a551-81d6-46d0-876d-79519719bb22-vm
 - cipher: chacha20-ietf
   name: D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_0e37471c
   obfs: plain
@@ -697,12 +884,6 @@ proxies:
 - name: D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_a860b7e2
   port: 443
   server: 137.175.22.88
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: A🟢🇿🇦res[🎬🤖📺🎭]_dokng.com_71f71160
-  port: 8443
-  server: 154.81.36.92
   skip-cert-verify: true
   tls: true
   type: http
@@ -720,14 +901,11 @@ proxies:
   tls: true
   type: http
   username: null
-- name: D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_09c15836
-  password: ''
-  port: 22222
-  server: 64.118.155.2
+- name: D🔴🇸🇬hos[🤖✨🎞️🔍]_dokng.com_600fd6e2
+  port: 9090
+  server: 128.199.113.85
   skip-cert-verify: true
   type: http
-  udp: true
-  username: ''
 - name: D🔴🇧🇪hos[🎬🤖📺🎭]_dokng.com_895a114b
   password: None
   port: 443
@@ -745,6 +923,22 @@ proxies:
   sni: www.itunes.com
   type: trojan
   udp: true
+- cipher: rc4-md5
+  name: D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_3fb70d97
+  obfs: tls1.2_ticket_auth
+  obfs-param: 6f5218522.douyin.com
+  password: di15PV
+  port: 29392
+  protocol: auth_aes128_md5
+  protocol-param: 218522:0hfCJk
+  server: api.meituan88.com
+  type: ssr
+- name: D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_b413a04d
+  port: 8443
+  server: 45.150.164.18
+  skip-cert-verify: true
+  tls: true
+  type: http
 - name: D🔴🇩🇰hos[🎬🤖📺🎭]_dokng.com_d1778b29
   port: 9443
   server: 185.245.84.50
@@ -767,27 +961,6 @@ proxies:
   tls: true
   type: http
   username: null
-- alpn:
-  - h3
-  - h2
-  client-fingerprint: chrome
-  encryption: none
-  name: D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_13ba2365
-  network: ws
-  port: 443
-  server: 188.114.99.0
-  servername: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /
-  xudp: true
 - name: C🟠🇩🇪hos[🎬🤖📺🎪]_dokng.com_cb6cfa3e
   password: null
   port: 9443
@@ -796,14 +969,6 @@ proxies:
   tls: true
   type: http
   username: null
-- name: A🟢🇹🇼res[🤖📺🎭🎪]_dokng.com_245c5b98
-  password: 87c6ad7b-e450-44a8-8088-bc2234d43de1
-  port: 47531
-  server: svip.skycon808.com
-  skip-cert-verify: true
-  sni: tw15.swiftrelay.cc
-  type: anytls
-  udp: true
 - name: D🔴🇮🇹hos[🎬🤖📺🎭]_dokng.com_397b3221
   password: null
   port: 443
@@ -812,16 +977,12 @@ proxies:
   tls: true
   type: http
   username: null
-- name: C🟠🇺🇸hos[📺]_dokng.com_715452b7
-  network: ws
-  password: e20fd145-65f1-4aa3-96be-da0524bbb16e
-  port: 20230
-  server: us003.421421.xyz
+- name: D🔴🇸🇪hos[🎬🤖📺🎭]_dokng.com_6c7ec50c
+  port: 443
+  server: 146.70.242.146
   skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  ws-opts:
-    path: /
+  tls: true
+  type: http
 - name: D🔴🇮🇪hos[🎬🤖📺🎭]_dokng.com_c562a771
   password: null
   port: 9443
@@ -845,6 +1006,12 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: http
+- name: D🔴🇸🇬hos[🎬🤖📺🎭]_dokng.com_ec84b940
+  password: null
+  port: 9090
+  server: 104.248.151.93
+  type: http
+  username: null
 - name: C🟠🇱🇻hos[🎬🤖📺🎭]_dokng.com_5b5762e8
   password: null
   port: 443
@@ -861,6 +1028,13 @@ proxies:
   tls: true
   type: http
   username: null
+- name: C🟠🇬🇧hos[🤖📺🎭✨]_dokng.com_25669227
+  password: None
+  port: 443
+  server: 185.164.138.156
+  skip-cert-verify: true
+  tls: true
+  type: http
 - name: D🔴🇭🇺hos[🤖📺🎭🎪]_dokng.com_58d0afef
   password: None
   port: 443
@@ -902,6 +1076,13 @@ proxies:
 - name: D🔴🇬🇧hos[🤖📺🎭🎪]_dokng.com_045fb906
   port: 9443
   server: 37.120.233.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_a0d944a3
+  password: None
+  port: 443
+  server: 193.239.236.134
   skip-cert-verify: true
   tls: true
   type: http
@@ -958,6 +1139,14 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: http
+- name: D🔴🇧🇦hos[🎬🤖📺🎭]_dokng.com_38a27677
+  password: null
+  port: 9443
+  server: 185.164.35.16
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
 - name: D🔴🇱🇻hos[🎬🤖📺🎭]_dokng.com_80a4f8f5
   password: None
   port: 443
@@ -989,6 +1178,25 @@ proxies:
   tls: true
   type: http
   username: null
+- name: C🟠🇷🇴hos[🎬🤖📺🎭]_dokng.com_cee0a31e
+  password: None
+  port: 9443
+  server: 135.136.1.2
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: D🔴🇪🇸hos[🤖📺🎭🎪]_dokng.com_735ca059
+  password: None
+  port: 443
+  server: 130.195.250.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
+- name: U⚪🏳️ukn[📺✨✈️]_dokng.com_0b409c03
+  port: 10800
+  server: 195.154.84.121
+  type: http
 - name: B🟡🇺🇸biz[🎬🤖📺🎭]_dokng.com_2434be8b
   password: None
   port: 443
@@ -996,6 +1204,16 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: http
+- name: B🟡🇺🇸biz[🎬🤖📺🎭]_dokng.com_e4a4c124
+  password: None
+  port: 443
+  server: 12.202.180.10
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  udp: true
+  username: ''
 - name: D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_6bbe933a
   password: null
   port: 443
@@ -1030,21 +1248,6 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: http
-- name: U⚪🏳️ukn[📺✨🔍]_dokng.com_671707ba
-  network: ws
-  port: 80
-  server: platform128.golnamakcert.top
-  servername: platform128.halalkhor.info
-  type: vless
-  udp: true
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  ws-opts:
-    headers:
-      Host: platform128.halalkhor.info
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/55.0.2883.87 Safari/537.36
-    path: /platform128
-  xudp: true
 - name: C🟠🇨🇭hos[🎬🤖📺🎭]_dokng.com_a74c39f7
   password: null
   port: 443
@@ -1068,6 +1271,16 @@ proxies:
   tls: true
   type: http
   username: null
+- name: D🔴🇭🇷hos[🎬🤖📺🎭]_dokng.com_842b3339
+  password: None
+  port: 443
+  server: 154.47.29.174
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  udp: true
+  username: ''
 - name: C🟠🇺🇸hos[🎬🤖📺🎭]_dokng.com_a019a231
   password: None
   port: 443
@@ -1075,13 +1288,14 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: http
-- name: C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_17fbfe15
-  password: '1234'
-  port: 2080
-  server: 54.151.160.36
-  skip-cert-verify: true
+- name: D🔴🇺🇸hos[📺🎭🎪]_dokng.com_1d385d2c
+  password: e4b72b531a2d10900519
+  port: 443
+  server: 107.151.238.27
+  sni: 6b97ee1b.acsnet.co
+  tls: true
   type: http
-  username: '1234'
+  username: testuser1
 - name: D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_4ab7116c
   password: None
   port: 9002
@@ -1164,6 +1378,13 @@ proxies:
   type: http
   udp: true
   username: ''
+- name: D🔴🇳🇴hos[🎬🤖📺🎭]_dokng.com_8a01707d
+  password: None
+  port: 9443
+  server: 146.70.170.210
+  skip-cert-verify: true
+  tls: true
+  type: http
 - name: A🟢🇨🇦res[🎬🤖📺🎭]_dokng.com_0e94351e
   password: None
   port: 443
@@ -1171,6 +1392,21 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: http
+- alterId: 0
+  cipher: auto
+  name: A🟢🇨🇳res[📦]_dokng.com_a83d68e0
+  network: ws
+  port: 10086
+  server: 120.48.133.162
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a01e5d56-464f-45b9-b600-164db4700162
+  ws-opts:
+    headers: {}
+    path: /
+  xudp: true
 - auth: 672445a0-a669-4978-8eb1-cfa5e6cdead4
   name: D🔴🇪🇸hos[🎬🤖📺🎭]_dokng.com_1aab8271
   password: 672445a0-a669-4978-8eb1-cfa5e6cdead4
@@ -1179,92 +1415,37 @@ proxies:
   skip-cert-verify: true
   type: hysteria2
   udp: true
-- name: 🔥Join+Telegram:@Farah_VPN🟣-4smo
-  type: vless
-  server: de.vmagnum.win
+- name: 🔥Join+Telegram:@Farah_VPN🟣-pMw9
+  type: vmess
+  server: uk2-2.998998.best
   port: 443
-  uuid: 0af34045-3d5e-4abe-bc8a-16e356daa214
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  sni: server3.9966338.xyz
+  ws-opts:
+    path: /waetasiuofguiwer
+    headers:
+      Host: server3.9966338.xyz
+  original_link: vmess://eyJhZGQiOiAidWsyLTIuOTk4OTk4LmJlc3QiLCAiYWlkIjogMCwgImhvc3QiOiAic2VydmVyMy45OTY2MzM4Lnh5eiIsICJpZCI6ICI1NTA0ZWFhOC0xMzk1LTQwMmYtOGUwZS03NWVjZDc2MmU2MjciLCAibmV0IjogIndzIiwgInBhdGgiOiAiL3dhZXRhc2l1b2ZndWl3ZXIiLCAicG9ydCI6ICI0NDMiLCAicHMiOiAiXHVkODNkXHVkZDI1Sm9pbitUZWxlZ3JhbTpARmFyYWhfVlBOXHVkODNkXHVkZmUzIiwgInNuaSI6ICJzZXJ2ZXIzLjk5NjYzMzgueHl6IiwgInRscyI6ICJ0bHMiLCAidHlwZSI6ICJub25lIiwgInYiOiAiMiJ9
+- name: 🔥Join+Telegram:@Farah_VPN🟣-Qhj3
+  type: vless
+  server: 104.18.45.38
+  port: 443
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
   security: tls
   tls: true
-  sni: api-v3-0af34045.vmagnum.win
+  sni: a.cwvps.eu.org
   skip-cert-verify: false
-  network: xhttp
-  ws-opts: {}
-  original_link: vless://0af34045-3d5e-4abe-bc8a-16e356daa214@de.vmagnum.win:443?encryption=none&fp=chrome&mode=stream-one&security=tls&sni=api-v3-0af34045.vmagnum.win&type=xhttp#🔥Join+Telegram:@Farah_VPN🟣
-- name: 🔥Join+Telegram:@Farah_VPN🟣-ni3E
-  type: vmess
-  server: us-23.hihu.net
-  port: 80
-  uuid: 8a9aaa70-ced9-11f1-b934-205c6d5f5d78
-  alterId: 0
-  cipher: auto
   network: ws
-  tls: false
-  sni: ''
   ws-opts:
-    path: /870ao26f
+    path: /ws
     headers:
-      Host: 172.66.0.251
-  original_link: vmess://eyJhZGQiOiAidXMtMjMuaGlodS5uZXQiLCAiaWQiOiAiOGE5YWFhNzAtY2VkOS0xMWYxLWI5MzQtMjA1YzZkNWY1ZDc4IiwgInBvcnQiOiAiODAiLCAic2N5IjogImF1dG8iLCAidiI6ICIyIiwgIm5ldCI6ICJ3cyIsICJob3N0IjogIjE3Mi42Ni4wLjI1MSIsICJwYXRoIjogIi84NzBhbzI2ZiIsICJ0bHMiOiAibm9uZSIsICJwcyI6ICJcdWQ4M2RcdWRkMjVKb2luK1RlbGVncmFtOkBGYXJhaF9WUE5cdWQ4M2RcdWRmZTMifQ==
-- name: 🔥Join+Telegram:@Farah_VPN🟣-nzjV
-  type: vmess
-  server: wjofHsQtEuEywxEq.v.3dns.vip
-  port: 443
-  uuid: a9f4de8b-68f1-44b6-b6a2-1db60940503a
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: wjofHsQtEuEywxEq.v.3dns.vip
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: wjofHsQtEuEywxEq.v.3dns.vip
-  original_link: vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNkXHVkZDI1Sm9pbitUZWxlZ3JhbTpARmFyYWhfVlBOXHVkODNkXHVkZmUzIiwgImFkZCI6ICJ3am9mSHNRdEV1RXl3eEVxLnYuM2Rucy52aXAiLCAicG9ydCI6ICI0NDMiLCAiaWQiOiAiYTlmNGRlOGItNjhmMS00NGI2LWI2YTItMWRiNjA5NDA1MDNhIiwgImFpZCI6ICIwIiwgInNjeSI6ICJhdXRvIiwgIm5ldCI6ICJ3cyIsICJ0eXBlIjogIiIsICJob3N0IjogIndqb2ZIc1F0RXVFeXd4RXEudi4zZG5zLnZpcCIsICJwYXRoIjogIi93cy12bWVzcyIsICJ0bHMiOiAidGxzIiwgInNuaSI6ICJ3am9mSHNRdEV1RXl3eEVxLnYuM2Rucy52aXAiLCAidGVzdF9uYW1lIjogIjE4In0=
-- name: 🔥Join+Telegram:@Farah_VPN🟣-vMxk
-  type: vmess
-  server: 8.219.97.17
-  port: 443
-  uuid: a9f4de8b-68f1-44b6-b6a2-1db60940503a
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: wjofhsqteueywxeq.v.3dns.vip
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: wjofhsqteueywxeq.v.3dns.vip
-  original_link: vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNkXHVkZDI1Sm9pbitUZWxlZ3JhbTpARmFyYWhfVlBOXHVkODNkXHVkZmUzIiwgImFkZCI6ICI4LjIxOS45Ny4xNyIsICJwb3J0IjogIjQ0MyIsICJpZCI6ICJhOWY0ZGU4Yi02OGYxLTQ0YjYtYjZhMi0xZGI2MDk0MDUwM2EiLCAiYWlkIjogIjAiLCAic2N5IjogImF1dG8iLCAibmV0IjogIndzIiwgInR5cGUiOiAiIiwgInRscyI6ICJ0bHMiLCAic25pIjogIndqb2Zoc3F0ZXVleXd4ZXEudi4zZG5zLnZpcCIsICJwYXRoIjogIi93cy12bWVzcyIsICJob3N0IjogIndqb2Zoc3F0ZXVleXd4ZXEudi4zZG5zLnZpcCJ9
-- name: 🔥Join+Telegram:@Farah_VPN🟣-uIxW
-  type: ss
-  server: 82.38.31.169
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-  original_link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.169:443#🔥Join+Telegram:@Farah_VPN🟣
-- name: 🔥Join+Telegram:@Farah_VPN🟣-wMfv
-  type: ss
-  server: 50.7.41.118
-  port: 17001
-  cipher: aes-256-gcm
-  password: I6o9NnialYLMEjVt28RF4dpjmr9wMvNL
-  udp: true
-  original_link: ss://YWVzLTI1Ni1nY206STZvOU5uaWFsWUxNRWpWdDI4UkY0ZHBqbXI5d012Tkw@50.7.41.118:17001#🔥Join+Telegram:@Farah_VPN🟣
-- name: 🔥Join+Telegram:@Farah_VPN🟣-HCNo
-  type: vless
-  server: 85.198.101.160
-  port: 443
-  uuid: 4f35284c-311a-4c2c-b196-fda3ac8a0b66
-  security: reality
-  tls: false
-  sni: api-maps.yandex.ru
-  skip-cert-verify: false
-  network: tcp
-  ws-opts: {}
-  original_link: vless://4f35284c-311a-4c2c-b196-fda3ac8a0b66@85.198.101.160:443?type=tcp&security=reality&sni=api-maps.yandex.ru&pbk=MSHKV2n0D01xQkXUY64I1gSraEVZb1GH8YPF9tF55kQ&fp=chrome&spx=/api/87567408&flow=xtls-rprx-vision&encryption=none#🔥Join+Telegram:@Farah_VPN🟣
-- name: 🔥Join+Telegram:@Farah_VPN🟣-hcTe
+      Host: a.cwvps.eu.org
+  original_link: vless://c4edb87e-8544-4fa4-bd1c-b0cda9a34b46@104.18.45.38:443?cs=semi-python&path=/ws&security=tls&alpn=http/1.1&encryption=none&fm=tlshello-0-len&insecure=0&host=a.cwvps.eu.org&fp=unsafe&type=ws&allowInsecure=0&sni=a.cwvps.eu.org#🔥Join+Telegram:@Farah_VPN🟣
+- name: 🔥Join+Telegram:@Farah_VPN🟣-ejVc
   type: vless
   server: 172.66.1.36
   port: 443
@@ -1279,54 +1460,22 @@ proxies:
     headers:
       Host: ccc.010304.xyz
   original_link: vless://d342d11e-d224-4463-b982-532309285094@172.66.1.36:443?cs=semi-python&path=/&security=tls&encryption=none&fm=tlshello-0-len&insecure=0&host=ccc.010304.xyz&fp=unsafe&type=ws&allowInsecure=0&sni=ccc.010304.xyz#🔥Join+Telegram:@Farah_VPN🟣
-- name: 🔥Join+Telegram:@Farah_VPN🟣-vwBf
-  type: vless
-  server: sc-thenetherlands1.09vpn.com
-  port: 80
-  uuid: 40cc9b52-25b8-4cd5-8b45-715ae26e6baf
-  security: none
-  tls: false
-  sni: ''
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: SC-TheNetherlands1.09vpn.com
-  original_link: vless://40cc9b52-25b8-4cd5-8b45-715ae26e6baf@sc-thenetherlands1.09vpn.com:80?encryption=none&host=SC-TheNetherlands1.09vpn.com&path=/vless/&security=none&type=ws#🔥Join+Telegram:@Farah_VPN🟣
-- name: 🔥Join+Telegram:@Farah_VPN🟣-qLCN
+- name: 🔥Join+Telegram:@Farah_VPN🟣-Edv2
   type: vmess
-  server: 43.132.192.16
-  port: 9527
-  uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
+  server: 47.76.57.83
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
   cipher: auto
-  network: tcp
-  tls: false
-  sni: ''
-  ws-opts: {}
-  original_link: vmess://eyJhZGQiOiAiNDMuMTMyLjE5Mi4xNiIsICJhaWQiOiAiMCIsICJhbHBuIjogIiIsICJmcCI6ICIiLCAiaG9zdCI6ICIiLCAiaWQiOiAiYWU4NjJlMWQtM2I4Yy00NDNhLTAyN2ItMzdjNmM2OWVmNDNjIiwgImluc2VjdXJlIjogIjAiLCAibmV0IjogInRjcCIsICJwYXRoIjogIiIsICJwY3MiOiAiIiwgInBvcnQiOiAiOTUyNyIsICJwcyI6ICJcdWQ4M2RcdWRkMjVKb2luK1RlbGVncmFtOkBGYXJhaF9WUE5cdWQ4M2RcdWRmZTMiLCAic2N5IjogImNoYWNoYTIwLXBvbHkxMzA1IiwgInNuaSI6ICIiLCAidGxzIjogIiIsICJ0eXBlIjogIm5vbmUiLCAidiI6ICIyIiwgInZjbiI6ICIifQ==
-- name: 🔥Join+Telegram:@Farah_VPN🟣-AQiA
-  type: ss
-  server: 49.12.249.167
-  port: 145
-  cipher: chacha20-ietf-poly1305
-  password: 5uDrCF_iLoxCiRkKku6f7A
-  udp: true
-  original_link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1dURyQ0ZfaUxveENpUmtLa3U2ZjdB@49.12.249.167:145#🔥Join+Telegram:@Farah_VPN🟣
-- name: 🔥Join+Telegram:@Farah_VPN🟣-1xCN
-  type: vless
-  server: nl4.levikogjgfdd.ir
-  port: 40443
-  uuid: 69a74770-7152-4a27-bef0-2615ca16e1b1
-  security: reality
-  tls: false
-  sni: ''
-  skip-cert-verify: false
-  network: tcp
-  ws-opts: {}
-  original_link: vless://69a74770-7152-4a27-bef0-2615ca16e1b1@nl4.levikogjgfdd.ir:40443?security=reality&amp;encryption=none&amp;pbk=D0AQp0cWaQR55Q-zPwp6__AxN9CoT9neZj0UzlNcLCk&amp;headerType=none&amp;type=tcp&amp;flow=xtls-rprx-vision&amp;sni=deepl.com&amp;sid=bd72#🔥Join+Telegram:@Farah_VPN🟣
-- name: 🔥Join+Telegram:@Farah_VPN🟣-LvEg
+  network: ws
+  tls: true
+  sni: null
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: VAH4URdZL3jDX5r2.v.3dns.vip
+  original_link: vmess://eyJhZGQiOiAiNDcuNzYuNTcuODMiLCAiYWlkIjogIjAiLCAiYWxwbiI6IG51bGwsICJmcCI6IG51bGwsICJob3N0IjogIlZBSDRVUmRaTDNqRFg1cjIudi4zZG5zLnZpcCIsICJpZCI6ICJmMjNiYjQyN2MxZjk0MzczODc2YzJmNDNlOWY3OTBmMyIsICJuYW1lIjogIkhLIFx1ZDgzY1x1ZGRlZFx1ZDgzY1x1ZGRmMCB8IEBSYXlkaWthbHggfCAzRjFFRTgiLCAibmV0IjogIndzIiwgInBhdGgiOiAiL3dzLXZtZXNzIiwgInBvcnQiOiA0NDMsICJwcyI6ICJcdWQ4M2RcdWRkMjVKb2luK1RlbGVncmFtOkBGYXJhaF9WUE5cdWQ4M2RcdWRmZTMiLCAic2N5IjogImF1dG8iLCAic25pIjogbnVsbCwgInRscyI6ICJ0bHMiLCAidHlwZSI6IG51bGwsICJ2IjogbnVsbH0=
+- name: 🔥Join+Telegram:@Farah_VPN🟣-PxxO
   type: vless
   server: 8.47.69.60
   port: 443
@@ -1341,82 +1490,22 @@ proxies:
     headers:
       Host: ccc.010304.xyz
   original_link: vless://d342d11e-d224-4463-b982-532309285094@8.47.69.60:443?cs=semi-python&path=/&security=tls&encryption=none&fm=tlshello-0-len&insecure=0&host=ccc.010304.xyz&fp=unsafe&type=ws&allowInsecure=0&sni=ccc.010304.xyz#🔥Join+Telegram:@Farah_VPN🟣
-- name: 🔥Join+Telegram:@Farah_VPN🟣-TbS6
-  type: vless
-  server: 91.210.169.181
-  port: 443
-  uuid: ff0b6ba8-bed0-4c4d-bbc9-23af47582615
-  security: tls
-  tls: true
-  sni: ''
-  skip-cert-verify: false
+- name: 🔥Join+Telegram:@Farah_VPN🟣-LGCN
+  type: vmess
+  server: 104.16.61.8
+  port: 2086
+  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
+  alterId: 0
+  cipher: auto
   network: ws
-  ws-opts:
-    path: /api/connect
-    headers:
-      Host: wstg.datasynctrue.online
-  original_link: vless://ff0b6ba8-bed0-4c4d-bbc9-23af47582615@91.210.169.181:443?path=/api/connect&security=tls&encryption=none&insecure=0&host=wstg.datasynctrue.online&type=ws&allowInsecure=0#🔥Join+Telegram:@Farah_VPN🟣
-- name: 🔥Join+Telegram:@Farah_VPN🟣-txT6
-  type: vless
-  server: 88.216.69.253
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  security: tls
-  tls: true
-  sni: ccc.010304.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: ccc.010304.xyz
-  original_link: vless://d342d11e-d224-4463-b982-532309285094@88.216.69.253:443?cs=semi-python&path=/fp&security=tls&encryption=none&fm=tlshello-0-len&insecure=0&host=ccc.010304.xyz&fp=unsafe&type=ws&allowInsecure=0&sni=ccc.010304.xyz#🔥Join+Telegram:@Farah_VPN🟣
-- name: 🔥Join+Telegram:@Farah_VPN🟣-LI9z
-  type: vless
-  server: 104.18.45.38
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  security: tls
-  tls: true
-  sni: ccc.010304.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
-    headers:
-      Host: ccc.010304.xyz
-  original_link: vless://d342d11e-d224-4463-b982-532309285094@104.18.45.38:443?cs=semi-python&path=/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560&security=tls&encryption=none&fm=tlshello-0-len&insecure=0&host=ccc.010304.xyz&fp=unsafe&type=ws&allowInsecure=0&sni=ccc.010304.xyz#🔥Join+Telegram:@Farah_VPN🟣
-- name: 🔥Join+Telegram:@Farah_VPN🟣-CNQL
-  type: vless
-  server: fearless-change.oneeat.co
-  port: 80
-  uuid: b055036a-2d81-4d46-ab18-4e1898b58cec
-  security: none
   tls: false
   sni: ''
-  skip-cert-verify: false
-  network: ws
   ws-opts:
-    path: /
+    path: /ivideos.sbs/linkws
     headers:
-      Host: ''
-  original_link: vless://b055036a-2d81-4d46-ab18-4e1898b58cec@fearless-change.oneeat.co:80?path=/&security=none&encryption=none&type=ws#🔥Join+Telegram:@Farah_VPN🟣
-- name: 🔥Join+Telegram:@Farah_VPN🟣-hW0U
-  type: vless
-  server: 104.21.221.158
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  security: tls
-  tls: true
-  sni: ccc.010304.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-  original_link: vless://d342d11e-d224-4463-b982-532309285094@104.21.221.158:443?cs=semi-python&path=/fp=chrome&security=tls&encryption=none&fm=tlshello-0-len&insecure=0&host=ccc.010304.xyz&fp=unsafe&type=ws&allowInsecure=0&sni=ccc.010304.xyz#🔥Join+Telegram:@Farah_VPN🟣
-- name: 🔥Join+Telegram:@Farah_VPN🟣-OHqt
+      Host: vmess.taxar71054.workers.dev
+  original_link: vmess://eyJhZGQiOiAiMTA0LjE2LjYxLjgiLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiZnAiOiAiIiwgImhvc3QiOiAidm1lc3MudGF4YXI3MTA1NC53b3JrZXJzLmRldiIsICJpZCI6ICI0NDFkYTM0Mi1jZTkwLTQ0MWUtYmZmOS1kMmNlYjU1ZTY4Y2EiLCAibmV0IjogIndzIiwgInBhdGgiOiAiL2l2aWRlb3Muc2JzL2xpbmt3cyIsICJwb3J0IjogIjIwODYiLCAic2N5IjogImF1dG8iLCAic25pIjogIiIsICJ0bHMiOiAiIiwgInR5cGUiOiAiIiwgInYiOiAiMiIsICJwcyI6ICJcdWQ4M2RcdWRkMjVKb2luK1RlbGVncmFtOkBGYXJhaF9WUE5cdWQ4M2RcdWRmZTMifQ==
+- name: 🔥Join+Telegram:@Farah_VPN🟣-g5Zo
   type: vless
   server: 8.35.211.242
   port: 443
@@ -1431,7 +1520,22 @@ proxies:
     headers:
       Host: vpn.cintaku.qzz.io
   original_link: vless://fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349@8.35.211.242:443?path=/vlessws&security=tls&encryption=none&insecure=0&host=vpn.cintaku.qzz.io&type=ws&allowInsecure=0&sni=vpn.cintaku.qzz.io#🔥Join+Telegram:@Farah_VPN🟣
-- name: 🔥Join+Telegram:@Farah_VPN🟣-oie2
+- name: 🔥Join+Telegram:@Farah_VPN🟣-rZRq
+  type: vmess
+  server: vah4urdzl3jdx5r2.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  sni: vah4urdzl3jdx5r2.v.3dns.vip
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: ''
+  original_link: vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNkXHVkZDI1Sm9pbitUZWxlZ3JhbTpARmFyYWhfVlBOXHVkODNkXHVkZmUzIiwgImFkZCI6ICJ2YWg0dXJkemwzamR4NXIyLnYuM2Rucy52aXAiLCAicG9ydCI6ICI0NDMiLCAiaWQiOiAiZjIzYmI0MjdjMWY5NDM3Mzg3NmMyZjQzZTlmNzkwZjMiLCAiYWlkIjogIjAiLCAic2N5IjogImF1dG8iLCAibmV0IjogIndzIiwgInR5cGUiOiAibm9uZSIsICJob3N0IjogIiIsICJwYXRoIjogIi93cy12bWVzcyIsICJ0bHMiOiAidGxzIiwgInNuaSI6ICJ2YWg0dXJkemwzamR4NXIyLnYuM2Rucy52aXAiLCAidGVzdF9uYW1lIjogIkhLMTMiLCAic2tpcC1jZXJ0LXZlcmlmeSI6IHRydWV9
+- name: 🔥Join+Telegram:@Farah_VPN🟣-FuUR
   type: ss
   server: 141.227.172.132
   port: 17001
@@ -1439,126 +1543,469 @@ proxies:
   password: I6o9NnialYLMEjVt28RF4dpjmr9wMvNL
   udp: true
   original_link: ss://YWVzLTI1Ni1nY206STZvOU5uaWFsWUxNRWpWdDI4UkY0ZHBqbXI5d012Tkw@141.227.172.132:17001#🔥Join+Telegram:@Farah_VPN🟣
-- name: 🔥Join+Telegram:@Farah_VPN🟣-6ybE
+- name: 🔥Join+Telegram:@Farah_VPN🟣-dSpj
+  type: vless
+  server: 152.228.162.19
+  port: 80
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  security: none
+  tls: false
+  sni: ''
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ''
+  original_link: vless://25f86cb1-2140-4085-abcb-c3a0ea7a4be0@152.228.162.19:80?path=/vless/&security=&encryption=none&type=ws#🔥Join+Telegram:@Farah_VPN🟣
+- name: 🔥Join+Telegram:@Farah_VPN🟣-7kG3
   type: vmess
-  server: dog-hk.kunlun01dns.com
-  port: 21041
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  server: 47.88.79.34
+  port: 443
+  uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
   alterId: 0
   cipher: auto
-  network: tcp
+  network: ws
+  tls: true
+  sni: rib9jxayoqjgn2kw.v.3dns.vip
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: rib9jxayoqjgn2kw.v.3dns.vip
+  original_link: vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNkXHVkZDI1Sm9pbitUZWxlZ3JhbTpARmFyYWhfVlBOXHVkODNkXHVkZmUzIiwgImFkZCI6ICI0Ny44OC43OS4zNCIsICJwb3J0IjogIjQ0MyIsICJpZCI6ICI5YjMxNDkwZC0xOTBlLTRlZjEtYWYwYS03Y2NhYjNlN2MzYjUiLCAiYWlkIjogIjAiLCAic2N5IjogImF1dG8iLCAibmV0IjogIndzIiwgInR5cGUiOiAiIiwgInRscyI6ICJ0bHMiLCAic25pIjogInJpYjlqeGF5b3FqZ24ya3cudi4zZG5zLnZpcCIsICJwYXRoIjogIi93cy12bWVzcyIsICJob3N0IjogInJpYjlqeGF5b3FqZ24ya3cudi4zZG5zLnZpcCJ9
+- name: 🔥Join+Telegram:@Farah_VPN🟣-fMCN
+  type: vmess
+  server: 169.40.32.48
+  port: 5071
+  uuid: f54e93d1-cd8e-434f-8122-4887e62c97f5
+  alterId: 0
+  cipher: auto
+  network: httpupgrade
   tls: false
   sni: ''
   ws-opts: {}
-  original_link: vmess://eyJhZGQiOiAiZG9nLWhrLmt1bmx1bjAxZG5zLmNvbSIsICJhaWQiOiAwLCAiaG9zdCI6ICIiLCAiaWQiOiAiOTQ2NGNhNDAtZGQ3NS0zNzQyLWE2MjgtZDkzMWE5ZjQxM2IyIiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIiLCAicG9ydCI6ICIyMTA0MSIsICJwcyI6ICJcdWQ4M2RcdWRkMjVKb2luK1RlbGVncmFtOkBGYXJhaF9WUE5cdWQ4M2RcdWRmZTMiLCAic25pIjogIiIsICJ0bHMiOiAiIiwgInR5cGUiOiAibm9uZSIsICJ2IjogIjIifQ==
+  original_link: vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNkXHVkZDI1Sm9pbitUZWxlZ3JhbTpARmFyYWhfVlBOXHVkODNkXHVkZmUzIiwgImFkZCI6ICIxNjkuNDAuMzIuNDgiLCAicG9ydCI6ICI1MDcxIiwgImlkIjogImY1NGU5M2QxLWNkOGUtNDM0Zi04MTIyLTQ4ODdlNjJjOTdmNSIsICJhaWQiOiAiMCIsICJzY3kiOiAiYXV0byIsICJuZXQiOiAiaHR0cHVwZ3JhZGUiLCAidHlwZSI6ICJub25lIiwgImhvc3QiOiAiMTY5LjQwLjMyLjQ4IiwgInBhdGgiOiAiL25kaXdud2lkaWU4MklzbXNpT3AiLCAidGxzIjogIm5vbmUiLCAic25pIjogIiIsICJhbHBuIjogIiIsICJmcCI6ICIifQ==
+- name: 🔥Join+Telegram:@Farah_VPN🟣-CNci
+  type: ss
+  server: switcher-nick-croquet.freesocks.work
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 9tqhMdIrTkgQ46PvhyAtMH
+  udp: true
+  original_link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5dHFoTWRJclRrZ1E0NlB2aHlBdE1I@switcher-nick-croquet.freesocks.work:443#🔥Join+Telegram:@Farah_VPN🟣
+- name: 🔥Join+Telegram:@Farah_VPN🟣-Of54
+  type: ss
+  server: 82.38.31.169
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+  original_link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.169:443#🔥Join+Telegram:@Farah_VPN🟣
+- name: 🔥Join+Telegram:@Farah_VPN🟣-XBVu
+  type: vless
+  server: de.vmagnum.win
+  port: 443
+  uuid: 0af34045-3d5e-4abe-bc8a-16e356daa214
+  security: tls
+  tls: true
+  sni: api-v3-0af34045.vmagnum.win
+  skip-cert-verify: false
+  network: xhttp
+  ws-opts: {}
+  original_link: vless://0af34045-3d5e-4abe-bc8a-16e356daa214@de.vmagnum.win:443?encryption=none&fp=chrome&mode=stream-one&security=tls&sni=api-v3-0af34045.vmagnum.win&type=xhttp#🔥Join+Telegram:@Farah_VPN🟣
+- name: 🔥Join+Telegram:@Farah_VPN🟣-W84I
+  type: vless
+  server: 104.21.221.158
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  security: tls
+  tls: true
+  sni: ccc.010304.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /fp=unsafe
+    headers:
+      Host: ccc.010304.xyz
+  original_link: vless://d342d11e-d224-4463-b982-532309285094@104.21.221.158:443?cs=semi-python&path=/fp=unsafe&security=tls&encryption=none&fm=tlshello-0-len&insecure=0&host=ccc.010304.xyz&fp=unsafe&type=ws&allowInsecure=0&sni=ccc.010304.xyz#🔥Join+Telegram:@Farah_VPN🟣
+- name: 🔥Join+Telegram:@Farah_VPN🟣-CNsN
+  type: vmess
+  server: vg.333756.xyz
+  port: 443
+  uuid: 603f6524-7a34-473c-94fe-a967b6b25095
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  sni: null
+  ws-opts:
+    path: /czprTuhzc5gNlUuOCnhD
+    headers:
+      Host: vg.333756.xyz
+  original_link: vmess://eyJ2IjogbnVsbCwgInBzIjogIlx1ZDgzZFx1ZGQyNUpvaW4rVGVsZWdyYW06QEZhcmFoX1ZQTlx1ZDgzZFx1ZGZlMyIsICJhZGQiOiAidmcuMzMzNzU2Lnh5eiIsICJwb3J0IjogNDQzLCAiaWQiOiAiNjAzZjY1MjQtN2EzNC00NzNjLTk0ZmUtYTk2N2I2YjI1MDk1IiwgImFpZCI6ICIwIiwgInNjeSI6IG51bGwsICJuZXQiOiAid3MiLCAidHlwZSI6IG51bGwsICJob3N0IjogInZnLjMzMzc1Ni54eXoiLCAiYWxwbiI6IG51bGwsICJwYXRoIjogIi9jenByVHVoemM1Z05sVXVPQ25oRCIsICJ0bHMiOiAidGxzIiwgInNuaSI6IG51bGwsICJmcCI6IG51bGwsICJuYW1lIjogIkdCIFx1ZDgzY1x1ZGRlY1x1ZDgzY1x1ZGRlNyB8IEBSYXlkaWthbHggfCBCOUM1MkEifQ==
+- name: 🔥Join+Telegram:@Farah_VPN🟣-wskM
+  type: vless
+  server: 5.22.221.127
+  port: 443
+  uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
+  security: none
+  tls: false
+  sni: ''
+  skip-cert-verify: false
+  network: tcp
+  ws-opts: {}
+  original_link: vless://44dfa3a7-f648-4587-819b-e653c0823f28@5.22.221.127:443?encryption=none&security=none&type=tcp#🔥Join+Telegram:@Farah_VPN🟣
+- name: 🔥Join+Telegram:@Farah_VPN🟣-EBuP
+  type: vmess
+  server: cf.090227.xyz
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  sni: ''
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
+  original_link: vmess://eyJhZGQiOiAiY2YuMDkwMjI3Lnh5eiIsICJhaWQiOiAwLCAiaG9zdCI6ICJ2bWVzcy5sYnc2NjYuZHBkbnMub3JnIiwgImlkIjogIjBjZjZkOTcwLTNmMWQtNGFhZS1hOTg5LTkyYThmNzZhZTNkYiIsICJuZXQiOiAid3MiLCAicGF0aCI6ICIvd3MiLCAicG9ydCI6IDQ0MywgInBzIjogIlx1ZDgzZFx1ZGQyNUpvaW4rVGVsZWdyYW06QEZhcmFoX1ZQTlx1ZDgzZFx1ZGZlMyIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAiIiwgInRscyI6ICJ0bHMiLCAidHlwZSI6ICJub25lIiwgInYiOiAiMiJ9
+- name: 🔥Join+Telegram:@Farah_VPN🟣-S25A
+  type: ss
+  server: 20.123.12.228
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: lmG45rfbkt8DAPfP
+  udp: true
+  original_link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpsbUc0NXJmYmt0OERBUGZQ@20.123.12.228:443#🔥Join+Telegram:@Farah_VPN🟣
+- name: 🔥Join+Telegram:@Farah_VPN🟣-1ctc
+  type: vmess
+  server: 172.66.0.1
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  sni: vmess.lbw666.dpdns.org
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
+  original_link: vmess://eyJhZGQiOiAiMTcyLjY2LjAuMSIsICJhaWQiOiAwLCAiaG9zdCI6ICJ2bWVzcy5sYnc2NjYuZHBkbnMub3JnIiwgImlkIjogIjBjZjZkOTcwLTNmMWQtNGFhZS1hOTg5LTkyYThmNzZhZTNkYiIsICJuZXQiOiAid3MiLCAicGF0aCI6ICIvd3MiLCAicG9ydCI6ICI0NDMiLCAicHMiOiAiXHVkODNkXHVkZDI1Sm9pbitUZWxlZ3JhbTpARmFyYWhfVlBOXHVkODNkXHVkZmUzIiwgInNuaSI6ICJ2bWVzcy5sYnc2NjYuZHBkbnMub3JnIiwgInRscyI6ICJ0bHMiLCAidHlwZSI6ICJub25lIiwgInYiOiAiMiJ9
+- name: 🔥Join+Telegram:@Farah_VPN🟣-m1j4
+  type: vless
+  server: ccs2g.pai50288.uk
+  port: 443
+  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
+  security: tls
+  tls: true
+  sni: ccs2g.pai50288.uk
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /pai50288
+    headers:
+      Host: ''
+  original_link: vless://8be461cb-a0df-47cf-bc0d-4d9e6a22fa74@ccs2g.pai50288.uk:443?path=/pai50288&security=tls&encryption=none&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=ccs2g.pai50288.uk#🔥Join+Telegram:@Farah_VPN🟣
+- name: 🔥Join+Telegram:@Farah_VPN🟣-nbNt
+  type: vless
+  server: 91.210.169.181
+  port: 443
+  uuid: ff0b6ba8-bed0-4c4d-bbc9-23af47582615
+  security: tls
+  tls: true
+  sni: ''
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /api/connect
+    headers:
+      Host: wstg.datasynctrue.online
+  original_link: vless://ff0b6ba8-bed0-4c4d-bbc9-23af47582615@91.210.169.181:443?path=/api/connect&security=tls&encryption=none&insecure=0&host=wstg.datasynctrue.online&type=ws&allowInsecure=0#🔥Join+Telegram:@Farah_VPN🟣
 - name: 101.36.104.239_Claude
   port: 10808
   server: 101.36.104.239
   type: socks5
   udp: true
+- name: 152.42.170.187_Claude
+  port: 9090
+  server: 152.42.170.187
+  type: http
 - name: JP_Tokyo_UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED_Claude
   port: 10808
   server: 101.36.104.46
   type: socks5
+- name: 🇪🇸ES_05
+  type: ss
+  server: 5.188.181.201
+  port: '9054'
+  cipher: aes-256-cfb
+  password: VcFuyXvND2yQWSFY
+  udp: true
 - name: 🇬🇧GB_07
   type: ss
-  server: 82.38.31.193
+  server: 82.38.31.216
   port: '8080'
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
 - name: 🇬🇧GB_08
   type: ss
-  server: 82.38.31.62
+  server: 82.38.31.46
   port: '8080'
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
 - name: 🇬🇧GB_09
   type: ss
-  server: 82.38.31.66
+  server: 82.38.31.35
   port: '8080'
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
 - name: 🇬🇧GB_10
   type: ss
-  server: 82.38.31.82
+  server: 82.38.31.214
   port: '8080'
   cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇬🇧GB_11
-  type: ss
-  server: 82.38.31.61
-  port: '8080'
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
 - name: 🇬🇧GB_12
   type: ss
-  server: 82.38.31.42
+  server: 82.38.31.155
   port: '8080'
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇳🇴 NO_27
+- name: 🇬🇧GB_13
   type: ss
-  server: 84.247.155.196
-  port: '80'
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
+  server: 82.38.31.176
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇳🇴 NO_28
+- name: 🇬🇧GB_15
   type: ss
-  server: 84.247.155.196
-  port: '443'
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
+  server: 82.38.31.217
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇺🇸 US_42
+- name: 🇬🇧GB_16
   type: ss
-  server: 154.36.158.197
-  port: '8388'
-  cipher: aes-256-gcm
-  password: BeaUf9c0AEWH40Pu
+  server: 82.38.31.210
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇺🇸US_44
+- name: 🇬🇧GB_17
   type: ss
-  server: 156.146.38.168
+  server: 82.38.31.3
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧GB_19
+  type: ss
+  server: 82.38.31.194
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧GB_20
+  type: ss
+  server: 82.38.31.219
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧GB_21
+  type: ss
+  server: 82.38.31.218
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧GB_22
+  type: ss
+  server: 82.38.31.2
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧GB_23
+  type: ss
+  server: 82.38.31.186
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧GB_24
+  type: ss
+  server: 82.38.31.187
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧GB_25
+  type: ss
+  server: 82.38.31.191
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧GB_26
+  type: ss
+  server: 82.38.31.149
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧GB_27
+  type: ss
+  server: 82.38.31.192
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧GB_29
+  type: ss
+  server: 82.38.31.10
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧GB_30
+  type: ss
+  server: 82.38.31.202
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧GB_31
+  type: ss
+  server: 82.38.31.174
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧GB_32
+  type: ss
+  server: 82.38.31.49
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇬🇧GB_33
+  type: ss
+  server: 82.38.31.34
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇰🇷KR_43
+  type: ss
+  server: 211.178.105.134
+  port: '6123'
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+  udp: true
+- name: 🇳🇱NL_45
+  type: ss
+  server: 193.29.139.235
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱NL_46
+  type: ss
+  server: 193.29.139.151
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱NL_48
+  type: ss
+  server: 193.29.139.147
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱NL_49
+  type: ss
+  server: 193.29.139.204
+  port: '8080'
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇺🇦UA_63
+  type: ss
+  server: 37.19.198.244
   port: '443'
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇺🇸US_45
+- name: 🇺🇦UA_64
   type: ss
-  server: 15.204.247.206
-  port: '4444'
-  cipher: aes-256-gcm
-  password: pKEW8JPByTVTLtM
-  udp: true
-- name: 🇿🇦ZA_51
-  type: ss
-  server: 102.133.165.160
-  port: '16233'
-  cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
-  udp: true
-- name: 🇿🇦ZA_52
-  type: ss
-  server: 102.37.156.224
+  server: 37.19.198.243
   port: '443'
-  cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-- name: 🏁ZZ_53
+- name: 🇺🇦UA_65
   type: ss
-  server: staging.lastilhame.monster
-  port: '49917'
-  cipher: chacha20-ietf-poly1305
-  password: G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP
+  server: 37.19.198.236
+  port: '443'
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-- name: 'Telgram: @vpnbaz-Lyef'
+- name: 🇺🇦UA_66
+  type: ss
+  server: 37.19.198.160
+  port: '443'
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸US_68
+  type: ss
+  server: 149.22.87.204
+  port: '443'
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸US_70
+  type: ss
+  server: 149.22.95.183
+  port: '443'
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸US_71
+  type: ss
+  server: 173.244.56.6
+  port: '443'
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇺🇸US_72
+  type: ss
+  server: 149.22.87.241
+  port: '443'
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: Telegram:@v2rayng3-CN78
+  server: 31.76.80.69
+  port: 443
+  type: hysteria2
+  password: ab8efdf13945829ae3699c342be406
+  auth: ab8efdf13945829ae3699c342be406
+  sni: fiproxy1.lockdwn.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  original_link: hysteria2://6aab8efdf13945829ae3699c342be406@31.76.80.69:443?insecure=0&sni=fiproxy1.lockdwn.com&obfs=salamander&obfs-password=uw9b2qq5rx#Telegram:@v2rayng3
+- name: 'Telgram: @vpnbaz-5aN0'
   type: vless
   server: wstg.datasynctrue.online
   port: 443
@@ -1578,171 +2025,227 @@ proxy-groups:
 - name: 节点选择
   type: select
   proxies:
+  - 自动选择
   - DIRECT
 - name: 自动选择
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🇺🇸US美国丨yoyapai.com_4
-  - 🇺🇸US_44
-  - 🔥Join+Telegram:@Farah_VPN🟣-hcTe
-  - 🔥Join+Telegram:@Farah_VPN🟣-LvEg
-  - 🇺🇸US_45
-  - ❓未知丨yoyapai.com_59
-  - 🔥Join+Telegram:@Farah_VPN🟣-txT6
-  - 🔥Join+Telegram:@Farah_VPN🟣-LI9z
   - A🟢🇺🇸res[🎬🤖📺🎭]_dokng.com_cd9955ce
-  - D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_13ba2365
-  - 🔥Join+Telegram:@Farah_VPN🟣-hW0U
-  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_3d47e9ce
-  - B🟡🇺🇸biz[🎬🤖📺🎭]_dokng.com_2434be8b
-  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_b2688550
-  - C🟠🇺🇸hos[🎬🤖📺🎭]_dokng.com_96845fbf
-  - 🛸69@oneclickvpnkeys
+  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080
+  - 🔥Join+Telegram:@Farah_VPN🟣-ejVc
+  - 🇺🇸US美国丨yoyapai.com_4
+  - ❓未知丨yoyapai.com_59
+  - 🔥Join+Telegram:@Farah_VPN🟣-W84I
+  - 🇺🇦UA_63
+  - 🇺🇦UA_64
+  - 🇺🇦UA_66
+  - 🇺🇦UA_65
+  - 🔥Join+Telegram:@Farah_VPN🟣-PxxO
   - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_3138c2ff
-  - 🛸96@oneclickvpnkeys
-  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_09c15836
-  - 🇩🇪DE德国丨yoyapai.com_10
-  - C🟠🇺🇸hos[🎬🤖📺🎭]_dokng.com_b8372adb
-  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_6bbe933a
-  - A🟢🇿🇦res[🎬🤖📺🎭]_dokng.com_71f71160
-  - A🟢🇺🇸res[🤖📺🎭🎪]_dokng.com_2b4093e7
-  - 🔥Join+Telegram:@Farah_VPN🟣-wMfv
-  - 🏁ZZ_53
-  - 🇬🇧GB_12
-  - 🔥Join+Telegram:@Farah_VPN🟣-uIxW
-  - 🇬🇧GB_11
-  - 🇬🇧GB_09
-  - 🇬🇧GB_10
-  - 🇬🇧GB_08
-  - 🔥Join+Telegram:@Farah_VPN🟣-oie2
-  - 🇬🇧GB_07
-  - 🇺🇸_美国_39
+  - 🛸69@oneclickvpnkeys
+  - 🇺🇸US_71
+  - 🇺🇸US-23.254.194.215-2392
+  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_a0d944a3
+  - 🇺🇸US_70
+  - C🟠🇺🇸hos[🎬🤖📺🎭]_dokng.com_96845fbf
+  - 🔥Join+Telegram:@Farah_VPN🟣-7kG3
+  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_3d47e9ce
+  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_b2688550
+  - C🟠🇺🇸hos[🎬🤖📺🎭]_dokng.com_a019a231
   - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_a860b7e2
-  - A🟢🇨🇦res[🎬🤖📺🎭]_dokng.com_e422b3f4
-  - 🇨🇦CA-155.138.138.2-4786
-  - A🟢🇨🇦res[🎬🤖📺🎭]_dokng.com_0e94351e
-  - 🇬🇧GB-82.38.31.181-0082
-  - 🇳🇴 NO_27
-  - 🇳🇴 NO_28
+  - 🔥Join+Telegram:@Farah_VPN🟣-1ctc
+  - B🟡🇺🇸biz[🎬🤖📺🎭]_dokng.com_e4a4c124
+  - B🟡🇺🇸biz[🎬🤖📺🎭]_dokng.com_2434be8b
+  - 🔥Join+Telegram:@Farah_VPN🟣-EBuP
+  - 🏁RELAY-104.17.147.222-1288
+  - 🔥Join+Telegram:@Farah_VPN🟣-S25A
+  - 🇪🇸ES_05
+  - D🔴🇺🇸hos[📺🎭🎪]_dokng.com_1d385d2c
   - C🟠🇺🇸hos[🎬🤖📺🎭]_dokng.com_ea2318bd
-  - 🇺🇸 US_42
-  - A🟢🇹🇷res[📺🎪✨🎞️]_dokng.com_f3b97fa9
+  - 🇳🇱NL-50.7.41.118-2330
   - 🛸75@oneclickvpnkeys
+  - 🏁RELAY-104.19.215.84-1291
+  - 🇳🇱NL_46
+  - 🇺🇸_美国_39
+  - 🇬🇧GB_13
+  - 🇳🇱NL_48
+  - 🇺🇸US_68
+  - 🇬🇧GB_32
+  - 🇬🇧GB_33
+  - 🇳🇱NL_45
+  - 🇬🇧GB_26
+  - 🇬🇧GB_31
+  - 🇬🇧GB_15
+  - 🇳🇱NL_49
+  - 🇬🇧GB_17
+  - 🇬🇧GB_12
+  - 🔥Join+Telegram:@Farah_VPN🟣-Of54
+  - 🇬🇧GB_08
+  - 🇬🇧GB_23
+  - 🇬🇧GB_29
+  - 🇬🇧GB_09
+  - 🇺🇸US_72
+  - 🇬🇧GB_27
+  - 🇬🇧GB_25
+  - A🟢🇺🇸res[🤖📺🎭🎪]_dokng.com_2b4093e7
+  - 🇬🇧GB_24
+  - 🇬🇧GB_21
+  - 🇬🇧GB_22
+  - 🇬🇧GB_19
+  - 🇬🇧GB_07
+  - 🇬🇧GB_30
+  - 🇬🇧GB_10
+  - 🇬🇧GB_20
+  - 🔥Join+Telegram:@Farah_VPN🟣-FuUR
+  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_b413a04d
+  - 🏁RELAY-104.18.0.22-1293
+  - 🔥Join+Telegram:@Farah_VPN🟣-wskM
+  - 美国3
+  - U⚪🏳️ukn[📺✨✈️]_dokng.com_0b409c03
+  - 🇯🇵JP-154.36.158.197-0169
+  - 🇷🇺 俄罗斯 | RUS 3
+  - D🔴🇺🇸hos[🤖📺🎭🎪]_dokng.com_6d16d882
+  - 美国2
+  - 🇨🇦CA-155.138.138.2-5171
+  - 🔥Join+Telegram:@Farah_VPN🟣-dSpj
+  - 美国5
   - 🇺🇸US美国丨yoyapai.com_16
   - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_83153416
-  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_450a5730
-  - A🟢🇬🇧res[🎬🤖📺🎭]_dokng.com_01f49dd6
-  - D🔴🇬🇧hos[🎬🤖📺🎭]_dokng.com_bd192656
-  - D🔴🇺🇸hos[🤖📺🎭🎪]_dokng.com_6d16d882
-  - 美国 852
-  - D🔴🇬🇧hos[🎬📺🎭🎪]_dokng.com_fed9fc96
-  - D🔴🇬🇧hos[🤖📺🎭🎪]_dokng.com_045fb906
-  - D🔴🇧🇪hos[🎬🤖📺🎭]_dokng.com_895a114b
-  - C🟠🇺🇸hos[📺]_dokng.com_715452b7
-  - D🔴🇬🇧hos[🎬🤖📺🎭]_dokng.com_566b18be
-  - D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_5ed03181
-  - C🟠🇩🇪hos[🎬🤖📺🎪]_dokng.com_cb6cfa3e
-  - D🔴🇮🇪hos[🎬🤖📺🎭]_dokng.com_c032dec9
+  - 🇬🇧GB_16
+  - 🇰🇷KR_43
   - 🇱🇺LU-85.234.78.169-4841
-  - 🇧🇾[www.v2nodes.com] vless-BY-1...
-  - 🇺🇦UA-104.253.216.227-0160
-  - D🔴🇩🇪hos[🎬🤖📺🎪]_dokng.com_58b82ebe
-  - D🔴🇩🇪hos[🎬🤖📺🎪]_dokng.com_f9a627c1
-  - D🔴🇮🇪hos[🎬🤖📺🎭]_dokng.com_c562a771
-  - 🇿🇦ZA_52
-  - D🔴🇩🇪hos[🤖📺🎭🎪]_dokng.com_acb60fd3
-  - 🇿🇦ZA_51
-  - D🔴🇩🇪hos[🎬🤖📺🎪]_dokng.com_46d7d8b2
-  - A🟢🇩🇪res[🎬🤖📺🎭]_dokng.com_b5bafa8e
-  - 美国 854
-  - 🔥Join+Telegram:@Farah_VPN🟣-ni3E
-  - D🔴🇮🇹hos[🎬🤖📺🎭]_dokng.com_397b3221
-  - A🟢🇫🇷res[🎬🤖📺🎭]_dokng.com_071a491a
-  - D🔴🇩🇰hos[🎬🤖📺🎭]_dokng.com_d1778b29
-  - C🟠🇳🇱hos[🎬🤖📺🎭]_dokng.com_2cadc6f0
-  - D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_4ab7116c
+  - A🟢🇨🇦res[🎬🤖📺🎭]_dokng.com_e422b3f4
+  - A🟢🇨🇦res[🎬🤖📺🎭]_dokng.com_0e94351e
+  - 🇯🇵JP-85.234.83.36-4890
+  - C🟠🇬🇧hos[🤖📺🎭✨]_dokng.com_25669227
+  - D🔴🇬🇧hos[🎬🤖📺🎭]_dokng.com_bd192656
+  - A🟢🇬🇧res[🎬🤖📺🎭]_dokng.com_01f49dd6
+  - D🔴🇬🇧hos[🎬🤖📺🎭]_dokng.com_566b18be
+  - 🇺🇸 美国 | USA 10
   - 🛸100@oneclickvpnkeys
-  - 🇯🇵JP-94.177.131.233-4881
-  - 🤩96@oneclickvpnkeys
-  - KR韩国(mibei77.com 米贝节点分享)_5
-  - DE_speednode_0002
-  - D🔴🇸🇪hos[🎬🤖📺🎭]_dokng.com_a76b8647
+  - D🔴🇬🇧hos[🎬📺🎭🎪]_dokng.com_fed9fc96
+  - D🔴🇩🇰hos[🎬🤖📺🎭]_dokng.com_d1778b29
+  - D🔴🇬🇧hos[🤖📺🎭🎪]_dokng.com_045fb906
+  - 🇩🇪DE德国丨yoyapai.com_10
+  - C🟠🇩🇪hos[🎬🤖📺🎪]_dokng.com_cb6cfa3e
+  - D🔴🇩🇪hos[🎬🤖📺🎪]_dokng.com_46d7d8b2
+  - 🐙32@oneclickvpnkeys
+  - 🇧🇾[www.v2nodes.com] vless-BY-1...
   - A🟢🇰🇷res[🎬🤖📺🎭]_dokng.com_8c4c28a6
-  - C🟠🇸🇪hos[🎬🤖📺🎪]_dokng.com_0e98105a
-  - 🔥Join+Telegram:@Farah_VPN🟣-AQiA
-  - D🔴🇸🇪hos[🤖📺🎪]_dokng.com_1ba3cfe0
-  - AU澳大利亚(mibei77.com 米贝节点分享)
-  - D🔴🇦🇹hos[🎬🤖📺🎭]_dokng.com_ad2e47da
-  - U⚪🏳️ukn_dokng.com_79f3708c
-  - 🔥Join+Telegram:@Farah_VPN🟣-vwBf
-  - D🔴🇱🇺hos[🎬🤖📺🎭]_dokng.com_fa783454
-  - '@FarazV2ray'
-  - C🟠🇨🇭hos[🎬🤖📺🎭]_dokng.com_a74c39f7
-  - JP_Tokyo_UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED_Claude
-  - D🔴🇭🇺hos[🤖📺🎭🎪]_dokng.com_58d0afef
-  - D🔴🇵🇱hos[🎬🤖📺🎭]_dokng.com_31efa2ea
-  - D🔴🇵🇱hos[🎬🤖📺🎪]_dokng.com_6d895544
-  - 🇯🇵JP-94.177.131.205-4842
-  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_f13c179f
-  - 🔥Join+Telegram:@Farah_VPN🟣-4smo
-  - C🟠🇱🇻hos[🎬🤖📺🎭]_dokng.com_5b5762e8
-  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_02ba6e35
-  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_f4e9aa61
-  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_7b001401
-  - 🇸🇬_新加坡_41
-  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_17fbfe15
-  - 🇭🇰_香港_38
-  - 🏁RELAY-104.21.41.92-0390
-  - D🔴🇧🇬hos[🎬🤖📺🎭]_dokng.com_f517a03a
-  - 🇯🇵JP-95.85.94.195-4857
-  - D🔴🇱🇻hos[🎬🤖📺🎭]_dokng.com_80a4f8f5
-  - 🇯🇵JP-95.85.94.214-4853
-  - C🟠🇺🇸hos[🎬🤖📺🎭]_dokng.com_07cae35f
-  - C🟠🇬🇷hos[🎬🤖📺🎭]_dokng.com_7f9fa854
+  - A🟢🇩🇪res[🎬🤖📺🎭]_dokng.com_b5bafa8e
+  - 🤩96@oneclickvpnkeys
   - 🇯🇵JP-31.223.184.187-4860
+  - D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_5ed03181
+  - D🔴🇮🇪hos[🎬🤖📺🎭]_dokng.com_c562a771
+  - A🟢🇫🇷res[🎬🤖📺🎭]_dokng.com_071a491a
+  - 🇯🇵JP-85.234.83.230-4912
+  - U⚪🏳️ukn_dokng.com_79f3708c
+  - D🔴🇩🇪hos[🎬🤖📺🎪]_dokng.com_58b82ebe
+  - D🔴🇱🇺hos[🎬🤖📺🎭]_dokng.com_fa783454
   - 委内瑞拉 001
+  - DE_speednode_0002
+  - D🔴🇮🇪hos[🎬🤖📺🎭]_dokng.com_c032dec9
+  - 🇺🇦UA-104.253.216.227-0160
+  - D🔴🇩🇪hos[🎬🤖📺🎪]_dokng.com_f9a627c1
+  - 🇰🇷_韩国_15
+  - KR韩国(mibei77.com 米贝节点分享)_5
+  - 🔥Join+Telegram:@Farah_VPN🟣-XBVu
+  - D🔴🇩🇪hos[🤖📺🎭🎪]_dokng.com_acb60fd3
+  - D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_4ab7116c
+  - D🔴🇧🇪hos[🎬🤖📺🎭]_dokng.com_895a114b
+  - C🟠🇳🇱hos[🎬🤖📺🎭]_dokng.com_2cadc6f0
+  - 🔥Join+Telegram:@Farah_VPN🟣-m1j4
+  - D🔴🇮🇹hos[🎬🤖📺🎭]_dokng.com_397b3221
   - 🇩🇪_德国_21
-  - C🟠🇺🇸hos[🎬🤖📺🎭]_dokng.com_a019a231
-  - C🟠🇩🇪hos[🎬🤖📺🎭]_dokng.com_db0b26fa
+  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_f13c179f
+  - 🇯🇵JP-95.85.94.214-4853
+  - D🔴🇦🇹hos[🎬🤖📺🎭]_dokng.com_ad2e47da
+  - JP_Tokyo_UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED_Claude
+  - D🔴🇸🇪hos[🎬🤖📺🎭]_dokng.com_6c7ec50c
+  - 101.36.104.239_Claude
+  - D🔴🇸🇪hos[🎬🤖📺🎭]_dokng.com_a76b8647
+  - 🇯🇵JP-94.177.131.205-4842
+  - C🟠🇸🇪hos[🎬🤖📺🎪]_dokng.com_0e98105a
+  - D🔴🇪🇸hos[🤖📺🎭🎪]_dokng.com_735ca059
+  - D🔴🇵🇱hos[🎬🤖📺🎭]_dokng.com_31efa2ea
+  - D🔴🇳🇴hos[🎬🤖📺🎭]_dokng.com_8a01707d
+  - AU澳大利亚(mibei77.com 米贝节点分享)
+  - C🟠🇨🇭hos[🎬🤖📺🎭]_dokng.com_a74c39f7
+  - D🔴🇸🇪hos[🤖📺🎪]_dokng.com_1ba3cfe0
+  - D🔴🇭🇺hos[🤖📺🎭🎪]_dokng.com_58d0afef
+  - D🔴🇵🇱hos[🎬🤖📺🎪]_dokng.com_6d895544
+  - C🟠🇱🇻hos[🎬🤖📺🎭]_dokng.com_5b5762e8
+  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_f4e9aa61
+  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_02ba6e35
+  - D🔴🇸🇬hos[🎬🤖📺🎭]_dokng.com_ec84b940
+  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_e68b3244
+  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_0360a354
+  - D🔴🇸🇬hos_dokng.com_9a3d7a66
+  - 🇸🇬_新加坡_41
+  - D🔴🇭🇷hos[🎬🤖📺🎭]_dokng.com_842b3339
+  - D🔴🇸🇬hos[🤖✨🎞️🔍]_dokng.com_600fd6e2
+  - 🇭🇰_香港_38
+  - 152.42.170.187_Claude
   - D🔴🇪🇸hos[🎬🤖📺🎭]_dokng.com_1aab8271
-  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_8125c2b7
+  - AU澳大利亚(mibei77.com 米贝节点分享)_1
+  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_6bbe933a
+  - C🟠🇷🇴hos[🎬🤖📺🎭]_dokng.com_cee0a31e
+  - 🇯🇵JP-94.177.131.233-4881
+  - D🔴🇱🇻hos[🎬🤖📺🎭]_dokng.com_80a4f8f5
+  - D🔴🇧🇦hos[🎬🤖📺🎭]_dokng.com_38a27677
+  - 🇸🇬SG-91.243.81.20-4885
+  - D🔴🇧🇬hos[🎬🤖📺🎭]_dokng.com_f517a03a
+  - 🇸🇬SG-91.243.81.128-4888
+  - 🇺🇸_美国_43
   - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_0e37471c
   - 🤩98@oneclickvpnkeys
-  - 🔥Join+Telegram:@Farah_VPN🟣-TbS6
-  - 101.36.104.239_Claude
-  - 🇳🇱NL-78.142.194.96-4836
-  - D🔴🇭🇰hos[📺🎭🎪🎞️]_dokng.com_054bd55d
+  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_8125c2b7
   - 🇳🇱_荷兰_30
-  - 🇯🇵JP-85.234.83.230-4912
-  - C🟠🇮🇱hos[🎬🤖📺🎭]_dokng.com_b9fb82b7
-  - 🇸🇬SG-91.243.81.152-4852
+  - D🔴🇭🇰hos[📺🎭🎪🎞️]_dokng.com_054bd55d
+  - 🇹🇼 🇨🇳 台湾 | TWN-DnEg
+  - '@vmess_ir'
+  - 🇱🇻LV拉脱维亚丨yoyapai.com
+  - 🔥Join+Telegram:@Farah_VPN🟣-pMw9
+  - A🟢🇨🇳res[📦]_dokng.com_a83d68e0
   - D🔴🇹🇼hos[🎬📺🎭🎪]_dokng.com_69bf9397
-  - 巴西 041
-  - 🇩🇪_德国_16
-  - 🇯🇵JP-85.234.83.36-4890
-  - 🔥Join+Telegram:@Farah_VPN🟣-6ybE
-  - D🔴🇷🇴hos[🎬📺🎭🎪]_dokng.com_309a5dd0
-  - A🟢🇹🇼res[🤖📺🎭🎪]_dokng.com_245c5b98
-  - C🟠🇵🇹hos[🎬🤖📺🎭]_dokng.com_2226fec1
-  - 🔥Join+Telegram:@Farah_VPN🟣-vMxk
-  - 🇸🇬SG-91.243.81.248-4679
-  - 'Telgram: @vpnbaz-Lyef'
-  - 🇸🇬SG-91.243.81.128-4888
-  - U⚪🏳️ukn[📺✨🔍]_dokng.com_671707ba
-  - TW台湾(mibei77.com 米贝节点分享)
-  - HK香港(mibei77.com 米贝节点分享)_1
-  - D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_d21277d2
-  - 🇸🇬SG-91.243.81.20-4885
-  - D🔴🇸🇬hos[🎬📺🎭🎪]_dokng.com_1b1556d8
+  - 🇯🇵JP-95.85.94.195-4857
+  - 🔥Join+Telegram:@Farah_VPN🟣-Edv2
+  - 🔥Join+Telegram:@Farah_VPN🟣-nbNt
+  - '@FarazV2ray'
+  - 🇸🇬SG-91.243.81.152-4852
+  - C🟠🇮🇱hos[🎬🤖📺🎭]_dokng.com_b9fb82b7
+  - 日本2
+  - D🔴🇸🇬hos[🎬🤖📺🎭]_dokng.com_f29f736e
   - 🇸🇬SG-91.243.81.78-4889
+  - D🔴🇷🇴hos[🎬📺🎭🎪]_dokng.com_309a5dd0
+  - C🟠🇵🇹hos[🎬🤖📺🎭]_dokng.com_2226fec1
+  - 🇭🇰 香港 | HKG 8
+  - 🇫🇮_FI_芬兰
   - 🇸🇬SG-45.135.228.189-4884
   - 🇸🇬SG-45.135.228.193-4854
+  - 巴西 041
+  - 日本1
   - 🇸🇬SG-81.28.13.180-4886
+  - C🟠🇬🇷hos[🎬🤖📺🎭]_dokng.com_7f9fa854
+  - 🇸🇬SG-91.243.81.248-4679
+  - TW台湾(mibei77.com 米贝节点分享)
+  - 🇮🇷伊朗丨yoyapai.com
   - A🟢🇹🇼res[🎬🤖📺🎭]_dokng.com_e59ee48e
-  - 🇪🇪_爱沙尼亚_34
-  - 🔥Join+Telegram:@Farah_VPN🟣-nzjV
-  - 🔥Join+Telegram:@Farah_VPN🟣-OHqt
+  - 🇭🇰 香港 | HKG 5
+  - 🔥Join+Telegram:@Farah_VPN🟣-rZRq
+  - 🇸🇪 瑞典 | SWE
+  - 🔥Join+Telegram:@Farah_VPN🟣-Qhj3
+  - C🟠🇭🇰hos_dokng.com_099454ad
+  - D🔴🇸🇬hos[🎬📺🎭🎪]_dokng.com_1b1556d8
+  - 'Telgram: @vpnbaz-5aN0'
+  - 🇦🇲[www.v2nodes.com] vless-AM-1...
+  - HK香港(mibei77.com 米贝节点分享)_1
+  - 🔥Join+Telegram:@Farah_VPN🟣-g5Zo
+  - 🇳🇱_荷兰_17
+  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_3fb70d97
+  - D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_d21277d2
+  - 美国 444
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -1750,331 +2253,441 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🇺🇸US美国丨yoyapai.com_4
   - 🛸75@oneclickvpnkeys
-  - 🛸96@oneclickvpnkeys
-  - 🇺🇸US_44
-  - B🟡🇺🇸biz[🎬🤖📺🎭]_dokng.com_2434be8b
-  - 🔥Join+Telegram:@Farah_VPN🟣-LvEg
-  - 🔥Join+Telegram:@Farah_VPN🟣-LI9z
-  - D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_13ba2365
-  - 🔥Join+Telegram:@Farah_VPN🟣-txT6
-  - 🇨🇦CA-155.138.138.2-4786
-  - 🔥Join+Telegram:@Farah_VPN🟣-hcTe
-  - ❓未知丨yoyapai.com_59
-  - 🇺🇸US_45
-  - A🟢🇺🇸res[🎬🤖📺🎭]_dokng.com_cd9955ce
-  - D🔴🇪🇸hos[🎬🤖📺🎭]_dokng.com_1aab8271
-  - 🔥Join+Telegram:@Farah_VPN🟣-hW0U
-  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_b2688550
-  - C🟠🇺🇸hos[🎬🤖📺🎭]_dokng.com_96845fbf
-  - C🟠🇺🇸hos[🎬🤖📺🎭]_dokng.com_ea2318bd
-  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_3d47e9ce
-  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_3138c2ff
-  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_09c15836
-  - C🟠🇺🇸hos[🎬🤖📺🎭]_dokng.com_b8372adb
-  - 🇩🇪DE德国丨yoyapai.com_10
-  - 🤩98@oneclickvpnkeys
-  - 🤩96@oneclickvpnkeys
-  - AU澳大利亚(mibei77.com 米贝节点分享)
-  - 🛸100@oneclickvpnkeys
-  - 🇺🇸US美国丨yoyapai.com_16
-  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_6bbe933a
-  - A🟢🇿🇦res[🎬🤖📺🎭]_dokng.com_71f71160
-  - KR韩国(mibei77.com 米贝节点分享)_5
   - 🛸69@oneclickvpnkeys
-  - 🔥Join+Telegram:@Farah_VPN🟣-ni3E
-  - 🇬🇧GB_09
-  - A🟢🇺🇸res[🤖📺🎭🎪]_dokng.com_2b4093e7
-  - 🔥Join+Telegram:@Farah_VPN🟣-wMfv
-  - '@FarazV2ray'
-  - 🇺🇦UA-104.253.216.227-0160
-  - 🇬🇧GB_11
-  - 🇬🇧GB_10
-  - 🏁ZZ_53
-  - 🔥Join+Telegram:@Farah_VPN🟣-uIxW
+  - A🟢🇺🇸res[🎬🤖📺🎭]_dokng.com_cd9955ce
+  - 🔥Join+Telegram:@Farah_VPN🟣-PxxO
+  - ❓未知丨yoyapai.com_59
+  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080
+  - 🇺🇦UA_63
+  - 🇺🇸US_71
+  - 🇺🇦UA_64
+  - 🇺🇦UA_65
+  - 🔥Join+Telegram:@Farah_VPN🟣-ejVc
+  - 🇺🇦UA_66
+  - C🟠🇺🇸hos[🎬🤖📺🎭]_dokng.com_ea2318bd
+  - 🇺🇸US美国丨yoyapai.com_4
+  - D🔴🇪🇸hos[🎬🤖📺🎭]_dokng.com_1aab8271
+  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_3138c2ff
+  - 🔥Join+Telegram:@Farah_VPN🟣-W84I
+  - 🐙32@oneclickvpnkeys
+  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_a0d944a3
+  - 美国5
+  - 🇺🇸US_70
+  - 美国3
+  - 🏁RELAY-104.17.147.222-1288
+  - C🟠🇺🇸hos[🎬🤖📺🎭]_dokng.com_96845fbf
+  - 🔥Join+Telegram:@Farah_VPN🟣-7kG3
+  - 🇨🇦CA-155.138.138.2-5171
+  - 🛸100@oneclickvpnkeys
+  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_b2688550
+  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_3d47e9ce
+  - B🟡🇺🇸biz[🎬🤖📺🎭]_dokng.com_e4a4c124
+  - C🟠🇺🇸hos[🎬🤖📺🎭]_dokng.com_a019a231
+  - 🤩98@oneclickvpnkeys
+  - AU澳大利亚(mibei77.com 米贝节点分享)
+  - B🟡🇺🇸biz[🎬🤖📺🎭]_dokng.com_2434be8b
+  - 🤩96@oneclickvpnkeys
+  - '@vmess_ir'
+  - 🔥Join+Telegram:@Farah_VPN🟣-1ctc
+  - 🇺🇸US-23.254.194.215-2392
+  - 🇺🇸US美国丨yoyapai.com_16
+  - 🔥Join+Telegram:@Farah_VPN🟣-EBuP
+  - KR韩国(mibei77.com 米贝节点分享)_5
+  - 🔥Join+Telegram:@Farah_VPN🟣-S25A
+  - D🔴🇺🇸hos[📺🎭🎪]_dokng.com_1d385d2c
+  - 🇳🇱NL-50.7.41.118-2330
+  - 🏁RELAY-104.18.0.22-1293
+  - AU澳大利亚(mibei77.com 米贝节点分享)_1
+  - 🇬🇧GB_17
+  - 🇺🇸US_72
+  - 🇺🇸US_68
+  - 🇳🇱NL_45
+  - 🇬🇧GB_29
+  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_b413a04d
+  - 🇬🇧GB_30
+  - 🇬🇧GB_26
+  - 🔥Join+Telegram:@Farah_VPN🟣-Of54
   - 🇬🇧GB_12
+  - 🇬🇧GB_22
+  - 🇬🇧GB_16
+  - 🇳🇱NL_49
+  - 🇬🇧GB_23
   - 🇬🇧GB_08
-  - 🇬🇧GB-82.38.31.181-0082
-  - C🟠🇺🇸hos[📺]_dokng.com_715452b7
-  - 🔥Join+Telegram:@Farah_VPN🟣-oie2
-  - 🇬🇧GB_07
-  - 美国 852
-  - 🇺🇸_美国_39
+  - 🇬🇧GB_25
+  - 🇬🇧GB_09
+  - 🇪🇸ES_05
+  - 🇬🇧GB_20
+  - 🇬🇧GB_24
+  - 🇬🇧GB_19
+  - 🇬🇧GB_33
+  - 🇬🇧GB_31
+  - 🇬🇧GB_32
+  - 🇬🇧GB_21
+  - 🇳🇱NL_46
   - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_a860b7e2
+  - A🟢🇺🇸res[🤖📺🎭🎪]_dokng.com_2b4093e7
+  - 🇬🇧GB_13
+  - 🇳🇱NL_48
+  - 🇬🇧GB_27
+  - 🇬🇧GB_10
+  - 美国2
+  - 🇩🇪DE德国丨yoyapai.com_10
+  - 🔥Join+Telegram:@Farah_VPN🟣-FuUR
+  - 🇺🇸_美国_39
+  - 🔥Join+Telegram:@Farah_VPN🟣-wskM
+  - '@FarazV2ray'
+  - U⚪🏳️ukn[📺✨✈️]_dokng.com_0b409c03
   - 🇱🇺LU-85.234.78.169-4841
-  - A🟢🇨🇦res[🎬🤖📺🎭]_dokng.com_0e94351e
-  - 美国 854
-  - 🔥Join+Telegram:@Farah_VPN🟣-vwBf
-  - A🟢🇨🇦res[🎬🤖📺🎭]_dokng.com_e422b3f4
-  - 🏁RELAY-104.21.41.92-0390
-  - 🇩🇪_德国_21
-  - A🟢🇹🇷res[📺🎪✨🎞️]_dokng.com_f3b97fa9
-  - 🇳🇴 NO_27
-  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_83153416
-  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_450a5730
-  - 🇳🇴 NO_28
+  - 🇷🇺 俄罗斯 | RUS 3
+  - 🔥Join+Telegram:@Farah_VPN🟣-m1j4
+  - 🔥Join+Telegram:@Farah_VPN🟣-dSpj
+  - D🔴🇺🇸hos[🤖📺🎭🎪]_dokng.com_6d16d882
+  - 🇯🇵JP-95.85.94.214-4853
+  - 🇯🇵JP-95.85.94.195-4857
   - 🇯🇵JP-31.223.184.187-4860
+  - 🇯🇵JP-85.234.83.36-4890
   - 🇯🇵JP-85.234.83.230-4912
   - 🇯🇵JP-94.177.131.205-4842
-  - 🇯🇵JP-95.85.94.214-4853
   - 🇯🇵JP-94.177.131.233-4881
-  - 🇯🇵JP-95.85.94.195-4857
-  - 🇯🇵JP-85.234.83.36-4890
-  - 🇺🇸 US_42
-  - D🔴🇺🇸hos[🤖📺🎭🎪]_dokng.com_6d16d882
-  - A🟢🇬🇧res[🎬🤖📺🎭]_dokng.com_01f49dd6
-  - D🔴🇬🇧hos[🎬🤖📺🎭]_dokng.com_566b18be
+  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_83153416
+  - 🇩🇪_德国_21
+  - 🇰🇷KR_43
+  - A🟢🇨🇦res[🎬🤖📺🎭]_dokng.com_e422b3f4
+  - 🏁RELAY-104.19.215.84-1291
+  - 🇺🇦UA-104.253.216.227-0160
+  - C🟠🇬🇧hos[🤖📺🎭✨]_dokng.com_25669227
+  - A🟢🇨🇦res[🎬🤖📺🎭]_dokng.com_0e94351e
+  - 🇺🇸 美国 | USA 10
   - D🔴🇬🇧hos[🎬🤖📺🎭]_dokng.com_bd192656
-  - D🔴🇮🇪hos[🎬🤖📺🎭]_dokng.com_c562a771
+  - 🇧🇾[www.v2nodes.com] vless-BY-1...
+  - D🔴🇬🇧hos[🎬🤖📺🎭]_dokng.com_566b18be
   - D🔴🇬🇧hos[🤖📺🎭🎪]_dokng.com_045fb906
+  - 🔥Join+Telegram:@Farah_VPN🟣-XBVu
+  - 🔥Join+Telegram:@Farah_VPN🟣-Qhj3
   - D🔴🇬🇧hos[🎬📺🎭🎪]_dokng.com_fed9fc96
-  - C🟠🇩🇪hos[🎬🤖📺🎪]_dokng.com_cb6cfa3e
-  - D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_5ed03181
+  - D🔴🇹🇼hos[🎬📺🎭🎪]_dokng.com_69bf9397
+  - A🟢🇫🇷res[🎬🤖📺🎭]_dokng.com_071a491a
+  - A🟢🇩🇪res[🎬🤖📺🎭]_dokng.com_b5bafa8e
   - D🔴🇩🇰hos[🎬🤖📺🎭]_dokng.com_d1778b29
+  - D🔴🇧🇪hos[🎬🤖📺🎭]_dokng.com_895a114b
+  - C🟠🇩🇪hos[🎬🤖📺🎪]_dokng.com_cb6cfa3e
+  - 委内瑞拉 001
+  - D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_5ed03181
   - D🔴🇮🇪hos[🎬🤖📺🎭]_dokng.com_c032dec9
-  - 🇿🇦ZA_52
+  - D🔴🇩🇪hos[🎬🤖📺🎪]_dokng.com_46d7d8b2
+  - A🟢🇹🇼res[🎬🤖📺🎭]_dokng.com_e59ee48e
+  - D🔴🇱🇺hos[🎬🤖📺🎭]_dokng.com_fa783454
+  - U⚪🏳️ukn_dokng.com_79f3708c
+  - 日本2
+  - A🟢🇰🇷res[🎬🤖📺🎭]_dokng.com_8c4c28a6
+  - A🟢🇬🇧res[🎬🤖📺🎭]_dokng.com_01f49dd6
   - D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_4ab7116c
   - D🔴🇩🇪hos[🎬🤖📺🎪]_dokng.com_58b82ebe
   - D🔴🇩🇪hos[🤖📺🎭🎪]_dokng.com_acb60fd3
-  - 🔥Join+Telegram:@Farah_VPN🟣-4smo
-  - 🇿🇦ZA_51
-  - D🔴🇧🇪hos[🎬🤖📺🎭]_dokng.com_895a114b
-  - D🔴🇩🇪hos[🎬🤖📺🎪]_dokng.com_f9a627c1
-  - A🟢🇫🇷res[🎬🤖📺🎭]_dokng.com_071a491a
-  - D🔴🇩🇪hos[🎬🤖📺🎪]_dokng.com_46d7d8b2
-  - A🟢🇩🇪res[🎬🤖📺🎭]_dokng.com_b5bafa8e
-  - 🇧🇾[www.v2nodes.com] vless-BY-1...
-  - D🔴🇹🇼hos[🎬📺🎭🎪]_dokng.com_69bf9397
-  - C🟠🇨🇭hos[🎬🤖📺🎭]_dokng.com_a74c39f7
+  - D🔴🇮🇪hos[🎬🤖📺🎭]_dokng.com_c562a771
   - DE_speednode_0002
+  - 日本1
   - C🟠🇳🇱hos[🎬🤖📺🎭]_dokng.com_2cadc6f0
-  - 🇳🇱NL-78.142.194.96-4836
-  - TW台湾(mibei77.com 米贝节点分享)
-  - A🟢🇰🇷res[🎬🤖📺🎭]_dokng.com_8c4c28a6
-  - C🟠🇸🇪hos[🎬🤖📺🎪]_dokng.com_0e98105a
-  - D🔴🇱🇺hos[🎬🤖📺🎭]_dokng.com_fa783454
-  - A🟢🇹🇼res[🎬🤖📺🎭]_dokng.com_e59ee48e
-  - 🇪🇪_爱沙尼亚_34
-  - 🇩🇪_德国_16
-  - D🔴🇵🇱hos[🎬🤖📺🎭]_dokng.com_31efa2ea
-  - 委内瑞拉 001
+  - D🔴🇩🇪hos[🎬🤖📺🎪]_dokng.com_f9a627c1
+  - D🔴🇮🇹hos[🎬🤖📺🎭]_dokng.com_397b3221
+  - 🇬🇧GB_07
+  - 101.36.104.239_Claude
+  - 🇬🇧GB_15
+  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_f13c179f
   - D🔴🇦🇹hos[🎬🤖📺🎭]_dokng.com_ad2e47da
   - JP_Tokyo_UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED_Claude
-  - D🔴🇮🇹hos[🎬🤖📺🎭]_dokng.com_397b3221
-  - D🔴🇵🇱hos[🎬🤖📺🎪]_dokng.com_6d895544
-  - D🔴🇭🇺hos[🤖📺🎭🎪]_dokng.com_58d0afef
-  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_f13c179f
-  - U⚪🏳️ukn_dokng.com_79f3708c
   - D🔴🇸🇪hos[🎬🤖📺🎭]_dokng.com_a76b8647
+  - C🟠🇸🇪hos[🎬🤖📺🎪]_dokng.com_0e98105a
+  - D🔴🇸🇪hos[🎬🤖📺🎭]_dokng.com_6c7ec50c
   - D🔴🇸🇪hos[🤖📺🎪]_dokng.com_1ba3cfe0
-  - 🇸🇬SG-91.243.81.248-4679
-  - 🇸🇬SG-45.135.228.189-4884
-  - 🇸🇬SG-91.243.81.152-4852
-  - 🇸🇬SG-45.135.228.193-4854
-  - 🇸🇬SG-81.28.13.180-4886
-  - 🇸🇬SG-91.243.81.78-4889
-  - 🇸🇬SG-91.243.81.20-4885
-  - 🇸🇬SG-91.243.81.128-4888
-  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_7b001401
-  - 🇭🇰_香港_38
-  - 🇸🇬_新加坡_41
-  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_17fbfe15
-  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_02ba6e35
-  - D🔴🇧🇬hos[🎬🤖📺🎭]_dokng.com_f517a03a
-  - C🟠🇩🇪hos[🎬🤖📺🎭]_dokng.com_db0b26fa
-  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_f4e9aa61
+  - D🔴🇭🇺hos[🤖📺🎭🎪]_dokng.com_58d0afef
   - C🟠🇱🇻hos[🎬🤖📺🎭]_dokng.com_5b5762e8
-  - 101.36.104.239_Claude
-  - C🟠🇺🇸hos[🎬🤖📺🎭]_dokng.com_a019a231
-  - C🟠🇬🇷hos[🎬🤖📺🎭]_dokng.com_7f9fa854
-  - C🟠🇺🇸hos[🎬🤖📺🎭]_dokng.com_07cae35f
-  - U⚪🏳️ukn[📺✨🔍]_dokng.com_671707ba
+  - D🔴🇭🇷hos[🎬🤖📺🎭]_dokng.com_842b3339
+  - 🇰🇷_韩国_15
+  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_02ba6e35
+  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_e68b3244
+  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_0360a354
+  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_f4e9aa61
+  - D🔴🇵🇱hos[🎬🤖📺🎭]_dokng.com_31efa2ea
+  - C🟠🇨🇭hos[🎬🤖📺🎭]_dokng.com_a74c39f7
+  - 🇸🇬SG-45.135.228.193-4854
+  - D🔴🇪🇸hos[🤖📺🎭🎪]_dokng.com_735ca059
+  - 🇸🇬SG-45.135.228.189-4884
+  - 🇸🇬SG-91.243.81.20-4885
+  - D🔴🇵🇱hos[🎬🤖📺🎪]_dokng.com_6d895544
+  - D🔴🇳🇴hos[🎬🤖📺🎭]_dokng.com_8a01707d
+  - 🇸🇬_新加坡_41
+  - 🇸🇬SG-91.243.81.248-4679
+  - 🇭🇰_香港_38
+  - 🇸🇬SG-91.243.81.152-4852
+  - D🔴🇸🇬hos[🤖✨🎞️🔍]_dokng.com_600fd6e2
+  - 🇸🇬SG-81.28.13.180-4886
+  - D🔴🇸🇬hos_dokng.com_9a3d7a66
+  - 🇫🇮_FI_芬兰
+  - 🇸🇬SG-91.243.81.78-4889
+  - 🇸🇬SG-91.243.81.128-4888
+  - D🔴🇸🇬hos[🎬🤖📺🎭]_dokng.com_ec84b940
+  - D🔴🇸🇬hos[🎬🤖📺🎭]_dokng.com_f29f736e
+  - 152.42.170.187_Claude
+  - 🇮🇷伊朗丨yoyapai.com
+  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_6bbe933a
+  - C🟠🇷🇴hos[🎬🤖📺🎭]_dokng.com_cee0a31e
+  - 🇭🇰 香港 | HKG 5
+  - D🔴🇧🇦hos[🎬🤖📺🎭]_dokng.com_38a27677
   - D🔴🇱🇻hos[🎬🤖📺🎭]_dokng.com_80a4f8f5
-  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_0e37471c
+  - D🔴🇧🇬hos[🎬🤖📺🎭]_dokng.com_f517a03a
   - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_8125c2b7
+  - 🇱🇻LV拉脱维亚丨yoyapai.com
+  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_0e37471c
+  - 🔥Join+Telegram:@Farah_VPN🟣-nbNt
+  - 🇺🇸_美国_43
+  - 🔥Join+Telegram:@Farah_VPN🟣-rZRq
+  - 🔥Join+Telegram:@Farah_VPN🟣-Edv2
+  - 'Telgram: @vpnbaz-5aN0'
+  - 🇸🇪 瑞典 | SWE
   - D🔴🇭🇰hos[📺🎭🎪🎞️]_dokng.com_054bd55d
-  - C🟠🇮🇱hos[🎬🤖📺🎭]_dokng.com_b9fb82b7
   - 🇳🇱_荷兰_30
-  - 🔥Join+Telegram:@Farah_VPN🟣-6ybE
+  - 🇹🇼 🇨🇳 台湾 | TWN-DnEg
   - D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_d21277d2
-  - HK香港(mibei77.com 米贝节点分享)_1
-  - 'Telgram: @vpnbaz-Lyef'
-  - 巴西 041
-  - A🟢🇹🇼res[🤖📺🎭🎪]_dokng.com_245c5b98
-  - D🔴🇷🇴hos[🎬📺🎭🎪]_dokng.com_309a5dd0
-  - 🔥Join+Telegram:@Farah_VPN🟣-vMxk
-  - 🔥Join+Telegram:@Farah_VPN🟣-nzjV
+  - TW台湾(mibei77.com 米贝节点分享)
+  - C🟠🇮🇱hos[🎬🤖📺🎭]_dokng.com_b9fb82b7
   - C🟠🇵🇹hos[🎬🤖📺🎭]_dokng.com_2226fec1
-  - 🔥Join+Telegram:@Farah_VPN🟣-TbS6
+  - 🇭🇰 香港 | HKG 8
+  - 巴西 041
+  - A🟢🇨🇳res[📦]_dokng.com_a83d68e0
+  - C🟠🇬🇷hos[🎬🤖📺🎭]_dokng.com_7f9fa854
+  - D🔴🇷🇴hos[🎬📺🎭🎪]_dokng.com_309a5dd0
+  - 🔥Join+Telegram:@Farah_VPN🟣-pMw9
+  - 🇯🇵JP-154.36.158.197-0169
+  - HK香港(mibei77.com 米贝节点分享)_1
+  - C🟠🇭🇰hos_dokng.com_099454ad
   - D🔴🇸🇬hos[🎬📺🎭🎪]_dokng.com_1b1556d8
-  - 🔥Join+Telegram:@Farah_VPN🟣-AQiA
-  - 🔥Join+Telegram:@Farah_VPN🟣-OHqt
+  - 🇦🇲[www.v2nodes.com] vless-AM-1...
+  - 🇳🇱_荷兰_17
+  - 🔥Join+Telegram:@Farah_VPN🟣-g5Zo
+  - 美国 444
+  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_3fb70d97
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 🇺🇸US美国丨yoyapai.com_4
-  - 🛸96@oneclickvpnkeys
   - 🛸75@oneclickvpnkeys
+  - 🇺🇸US美国丨yoyapai.com_4
   - 🛸69@oneclickvpnkeys
-  - 🇺🇸US_44
-  - 🔥Join+Telegram:@Farah_VPN🟣-txT6
-  - 🔥Join+Telegram:@Farah_VPN🟣-LI9z
-  - 🔥Join+Telegram:@Farah_VPN🟣-hcTe
-  - 🔥Join+Telegram:@Farah_VPN🟣-LvEg
-  - 🇨🇦CA-155.138.138.2-4786
-  - D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_13ba2365
-  - 🔥Join+Telegram:@Farah_VPN🟣-hW0U
   - A🟢🇺🇸res[🎬🤖📺🎭]_dokng.com_cd9955ce
-  - 🇺🇸US_45
+  - 🔥Join+Telegram:@Farah_VPN🟣-W84I
+  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080
+  - 🔥Join+Telegram:@Farah_VPN🟣-ejVc
+  - 🇺🇦UA_66
+  - 🔥Join+Telegram:@Farah_VPN🟣-PxxO
+  - 🏁RELAY-104.17.147.222-1288
   - ❓未知丨yoyapai.com_59
+  - 🇺🇸US_71
+  - 🇺🇦UA_63
+  - 🇺🇦UA_64
+  - 🇺🇦UA_65
   - D🔴🇪🇸hos[🎬🤖📺🎭]_dokng.com_1aab8271
-  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_b2688550
-  - C🟠🇺🇸hos[🎬🤖📺🎭]_dokng.com_a019a231
-  - C🟠🇺🇸hos[🎬🤖📺🎭]_dokng.com_96845fbf
-  - C🟠🇺🇸hos[🎬🤖📺🎭]_dokng.com_ea2318bd
-  - B🟡🇺🇸biz[🎬🤖📺🎭]_dokng.com_2434be8b
-  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_3d47e9ce
   - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_3138c2ff
-  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_09c15836
-  - A🟢🇿🇦res[🎬🤖📺🎭]_dokng.com_71f71160
-  - AU澳大利亚(mibei77.com 米贝节点分享)
-  - 🤩96@oneclickvpnkeys
-  - 🇺🇸US美国丨yoyapai.com_16
-  - TW台湾(mibei77.com 米贝节点分享)
+  - 🇺🇸US-23.254.194.215-2392
+  - 🐙32@oneclickvpnkeys
+  - 🇺🇸US_70
+  - 🏁RELAY-104.19.215.84-1291
+  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_a0d944a3
+  - 美国5
+  - 🇨🇦CA-155.138.138.2-5171
+  - 🔥Join+Telegram:@Farah_VPN🟣-7kG3
+  - 🔥Join+Telegram:@Farah_VPN🟣-1ctc
+  - 美国3
+  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_3d47e9ce
+  - C🟠🇺🇸hos[🎬🤖📺🎭]_dokng.com_96845fbf
   - 🛸100@oneclickvpnkeys
-  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_6bbe933a
-  - 🤩98@oneclickvpnkeys
+  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_b2688550
+  - AU澳大利亚(mibei77.com 米贝节点分享)_1
+  - 🔥Join+Telegram:@Farah_VPN🟣-EBuP
+  - C🟠🇺🇸hos[🎬🤖📺🎭]_dokng.com_a019a231
+  - B🟡🇺🇸biz[🎬🤖📺🎭]_dokng.com_e4a4c124
+  - AU澳大利亚(mibei77.com 米贝节点分享)
   - A🟢🇹🇼res[🎬🤖📺🎭]_dokng.com_e59ee48e
-  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_a860b7e2
-  - 🔥Join+Telegram:@Farah_VPN🟣-ni3E
-  - 美国 852
-  - KR韩国(mibei77.com 米贝节点分享)_5
-  - 🏁ZZ_53
+  - '@vmess_ir'
+  - TW台湾(mibei77.com 米贝节点分享)
+  - 🤩98@oneclickvpnkeys
+  - 🤩96@oneclickvpnkeys
   - HK香港(mibei77.com 米贝节点分享)_1
-  - 🇬🇧GB_08
-  - A🟢🇺🇸res[🤖📺🎭🎪]_dokng.com_2b4093e7
-  - C🟠🇺🇸hos[🎬🤖📺🎭]_dokng.com_b8372adb
-  - 🇬🇧GB_12
-  - 🇬🇧GB_07
-  - 🇩🇪DE德国丨yoyapai.com_10
-  - 🇬🇧GB_11
-  - 🇬🇧GB_10
-  - 🔥Join+Telegram:@Farah_VPN🟣-oie2
-  - 🔥Join+Telegram:@Farah_VPN🟣-uIxW
-  - 🇺🇦UA-104.253.216.227-0160
-  - 🇬🇧GB_09
-  - C🟠🇺🇸hos[📺]_dokng.com_715452b7
-  - 🇬🇧GB-82.38.31.181-0082
-  - 🔥Join+Telegram:@Farah_VPN🟣-wMfv
+  - B🟡🇺🇸biz[🎬🤖📺🎭]_dokng.com_2434be8b
+  - 🇺🇸US美国丨yoyapai.com_16
+  - 🔥Join+Telegram:@Farah_VPN🟣-S25A
+  - KR韩国(mibei77.com 米贝节点分享)_5
+  - 🇪🇸ES_05
+  - 🇭🇰 香港 | HKG 5
+  - D🔴🇺🇸hos[📺🎭🎪]_dokng.com_1d385d2c
+  - 🇸🇪 瑞典 | SWE
+  - 🇳🇱NL-50.7.41.118-2330
+  - 🇹🇼 🇨🇳 台湾 | TWN-DnEg
+  - 🇬🇧GB_17
   - 🇺🇸_美国_39
+  - 🇺🇸US_68
+  - 🇬🇧GB_22
+  - 🇬🇧GB_23
+  - 🇺🇸US_72
+  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_b413a04d
+  - 🇬🇧GB_24
+  - 🇬🇧GB_33
+  - 🇬🇧GB_12
+  - 🇬🇧GB_25
+  - 美国2
+  - 🇬🇧GB_32
+  - 🇬🇧GB_26
+  - 🇬🇧GB_21
+  - 🔥Join+Telegram:@Farah_VPN🟣-Of54
+  - 🇬🇧GB_31
+  - 🇬🇧GB_08
+  - 🇬🇧GB_07
+  - 🇬🇧GB_16
+  - 🇳🇱NL_49
+  - 🇬🇧GB_20
+  - 🇳🇱NL_45
+  - 🇬🇧GB_29
+  - 🇳🇱NL_48
+  - 🇬🇧GB_15
+  - 🇬🇧GB_09
+  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_a860b7e2
+  - 🇬🇧GB_19
   - '@FarazV2ray'
-  - A🟢🇹🇼res[🤖📺🎭🎪]_dokng.com_245c5b98
-  - A🟢🇨🇦res[🎬🤖📺🎭]_dokng.com_e422b3f4
-  - 🇱🇺LU-85.234.78.169-4841
-  - 🔥Join+Telegram:@Farah_VPN🟣-vwBf
-  - A🟢🇨🇦res[🎬🤖📺🎭]_dokng.com_0e94351e
-  - A🟢🇹🇷res[📺🎪✨🎞️]_dokng.com_f3b97fa9
-  - 🇳🇴 NO_28
-  - 🇳🇴 NO_27
-  - 🇩🇪_德国_21
-  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_450a5730
-  - A🟢🇬🇧res[🎬🤖📺🎭]_dokng.com_01f49dd6
-  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_83153416
-  - 🇯🇵JP-95.85.94.214-4853
-  - 🇯🇵JP-95.85.94.195-4857
-  - 🇯🇵JP-31.223.184.187-4860
-  - 🇯🇵JP-94.177.131.233-4881
-  - 🇯🇵JP-85.234.83.230-4912
-  - 🇯🇵JP-85.234.83.36-4890
-  - D🔴🇬🇧hos[🎬🤖📺🎭]_dokng.com_566b18be
-  - 🇯🇵JP-94.177.131.205-4842
-  - D🔴🇬🇧hos[🎬🤖📺🎭]_dokng.com_bd192656
+  - 🇬🇧GB_13
+  - 🔥Join+Telegram:@Farah_VPN🟣-FuUR
+  - A🟢🇺🇸res[🤖📺🎭🎪]_dokng.com_2b4093e7
+  - 🇬🇧GB_27
+  - C🟠🇺🇸hos[🎬🤖📺🎭]_dokng.com_ea2318bd
+  - 🇳🇱NL_46
+  - 🇩🇪DE德国丨yoyapai.com_10
+  - 🏁RELAY-104.18.0.22-1293
+  - 🔥Join+Telegram:@Farah_VPN🟣-wskM
+  - 🇺🇦UA-104.253.216.227-0160
+  - 🇬🇧GB_10
+  - 🔥Join+Telegram:@Farah_VPN🟣-m1j4
+  - U⚪🏳️ukn[📺✨✈️]_dokng.com_0b409c03
   - D🔴🇺🇸hos[🤖📺🎭🎪]_dokng.com_6d16d882
-  - D🔴🇬🇧hos[🤖📺🎭🎪]_dokng.com_045fb906
-  - D🔴🇩🇪hos[🎬🤖📺🎪]_dokng.com_46d7d8b2
-  - C🟠🇩🇪hos[🎬🤖📺🎪]_dokng.com_cb6cfa3e
+  - 🇱🇺LU-85.234.78.169-4841
+  - 🇷🇺 俄罗斯 | RUS 3
+  - 🔥Join+Telegram:@Farah_VPN🟣-dSpj
+  - 🇯🇵JP-95.85.94.195-4857
+  - 🇯🇵JP-94.177.131.205-4842
+  - 🇯🇵JP-94.177.131.233-4881
+  - 🇯🇵JP-31.223.184.187-4860
+  - 🇯🇵JP-95.85.94.214-4853
+  - 🇯🇵JP-85.234.83.36-4890
+  - 🇯🇵JP-85.234.83.230-4912
+  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_83153416
+  - 🇩🇪_德国_21
+  - 🇰🇷KR_43
+  - A🟢🇨🇦res[🎬🤖📺🎭]_dokng.com_0e94351e
+  - A🟢🇬🇧res[🎬🤖📺🎭]_dokng.com_01f49dd6
+  - C🟠🇬🇧hos[🤖📺🎭✨]_dokng.com_25669227
+  - A🟢🇨🇦res[🎬🤖📺🎭]_dokng.com_e422b3f4
+  - D🔴🇬🇧hos[🎬🤖📺🎭]_dokng.com_bd192656
+  - D🔴🇬🇧hos[🎬🤖📺🎭]_dokng.com_566b18be
   - D🔴🇬🇧hos[🎬📺🎭🎪]_dokng.com_fed9fc96
-  - D🔴🇮🇪hos[🎬🤖📺🎭]_dokng.com_c562a771
+  - D🔴🇬🇧hos[🤖📺🎭🎪]_dokng.com_045fb906
+  - 🔥Join+Telegram:@Farah_VPN🟣-XBVu
+  - D🔴🇹🇼hos[🎬📺🎭🎪]_dokng.com_69bf9397
+  - A🟢🇫🇷res[🎬🤖📺🎭]_dokng.com_071a491a
+  - 🇧🇾[www.v2nodes.com] vless-BY-1...
+  - C🟠🇩🇪hos[🎬🤖📺🎪]_dokng.com_cb6cfa3e
+  - D🔴🇩🇪hos[🎬🤖📺🎪]_dokng.com_46d7d8b2
   - D🔴🇩🇰hos[🎬🤖📺🎭]_dokng.com_d1778b29
-  - D🔴🇮🇪hos[🎬🤖📺🎭]_dokng.com_c032dec9
-  - D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_4ab7116c
-  - 🔥Join+Telegram:@Farah_VPN🟣-4smo
-  - D🔴🇩🇪hos[🤖📺🎭🎪]_dokng.com_acb60fd3
-  - 🇿🇦ZA_52
-  - D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_5ed03181
-  - 🇿🇦ZA_51
   - A🟢🇩🇪res[🎬🤖📺🎭]_dokng.com_b5bafa8e
+  - D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_5ed03181
+  - D🔴🇮🇪hos[🎬🤖📺🎭]_dokng.com_c032dec9
+  - D🔴🇩🇪hos[🎬🤖📺🎪]_dokng.com_58b82ebe
   - D🔴🇧🇪hos[🎬🤖📺🎭]_dokng.com_895a114b
   - 委内瑞拉 001
   - D🔴🇩🇪hos[🎬🤖📺🎪]_dokng.com_f9a627c1
-  - D🔴🇹🇼hos[🎬📺🎭🎪]_dokng.com_69bf9397
-  - DE_speednode_0002
-  - D🔴🇩🇪hos[🎬🤖📺🎪]_dokng.com_58b82ebe
-  - A🟢🇫🇷res[🎬🤖📺🎭]_dokng.com_071a491a
-  - C🟠🇳🇱hos[🎬🤖📺🎭]_dokng.com_2cadc6f0
   - D🔴🇱🇺hos[🎬🤖📺🎭]_dokng.com_fa783454
-  - 🇳🇱NL-78.142.194.96-4836
-  - 🇧🇾[www.v2nodes.com] vless-BY-1...
-  - A🟢🇰🇷res[🎬🤖📺🎭]_dokng.com_8c4c28a6
-  - D🔴🇮🇹hos[🎬🤖📺🎭]_dokng.com_397b3221
-  - D🔴🇦🇹hos[🎬🤖📺🎭]_dokng.com_ad2e47da
-  - D🔴🇵🇱hos[🎬🤖📺🎭]_dokng.com_31efa2ea
-  - 🏁RELAY-104.21.41.92-0390
-  - C🟠🇸🇪hos[🎬🤖📺🎪]_dokng.com_0e98105a
-  - D🔴🇵🇱hos[🎬🤖📺🎪]_dokng.com_6d895544
-  - C🟠🇱🇻hos[🎬🤖📺🎭]_dokng.com_5b5762e8
   - U⚪🏳️ukn_dokng.com_79f3708c
-  - 🔥Join+Telegram:@Farah_VPN🟣-AQiA
+  - D🔴🇮🇪hos[🎬🤖📺🎭]_dokng.com_c562a771
+  - C🟠🇳🇱hos[🎬🤖📺🎭]_dokng.com_2cadc6f0
+  - 日本2
+  - D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_4ab7116c
+  - DE_speednode_0002
+  - 日本1
+  - 🇰🇷_韩国_15
+  - D🔴🇩🇪hos[🤖📺🎭🎪]_dokng.com_acb60fd3
+  - A🟢🇰🇷res[🎬🤖📺🎭]_dokng.com_8c4c28a6
+  - 🇺🇸 美国 | USA 10
   - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_f13c179f
   - D🔴🇸🇪hos[🎬🤖📺🎭]_dokng.com_a76b8647
-  - D🔴🇸🇪hos[🤖📺🎪]_dokng.com_1ba3cfe0
-  - C🟠🇨🇭hos[🎬🤖📺🎭]_dokng.com_a74c39f7
-  - D🔴🇭🇺hos[🤖📺🎭🎪]_dokng.com_58d0afef
-  - D🔴🇱🇻hos[🎬🤖📺🎭]_dokng.com_80a4f8f5
-  - 🇸🇬SG-45.135.228.189-4884
-  - 🇸🇬SG-91.243.81.248-4679
-  - 🇸🇬SG-91.243.81.152-4852
-  - 🇸🇬SG-81.28.13.180-4886
-  - 🇸🇬SG-91.243.81.128-4888
-  - 🇸🇬SG-91.243.81.20-4885
-  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_02ba6e35
-  - 🇭🇰_香港_38
-  - 🇸🇬SG-91.243.81.78-4889
-  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_7b001401
-  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_17fbfe15
-  - 🇸🇬SG-45.135.228.193-4854
-  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_f4e9aa61
-  - 🇸🇬_新加坡_41
-  - 美国 854
-  - JP_Tokyo_UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED_Claude
-  - C🟠🇺🇸hos[🎬🤖📺🎭]_dokng.com_07cae35f
-  - C🟠🇬🇷hos[🎬🤖📺🎭]_dokng.com_7f9fa854
-  - 🇩🇪_德国_16
-  - D🔴🇧🇬hos[🎬🤖📺🎭]_dokng.com_f517a03a
-  - 🇺🇸 US_42
-  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_8125c2b7
-  - U⚪🏳️ukn[📺✨🔍]_dokng.com_671707ba
-  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_0e37471c
-  - 🇳🇱_荷兰_30
+  - 🇬🇧GB_30
+  - D🔴🇪🇸hos[🤖📺🎭🎪]_dokng.com_735ca059
   - 101.36.104.239_Claude
+  - D🔴🇸🇪hos[🎬🤖📺🎭]_dokng.com_6c7ec50c
+  - C🟠🇸🇪hos[🎬🤖📺🎪]_dokng.com_0e98105a
+  - D🔴🇮🇹hos[🎬🤖📺🎭]_dokng.com_397b3221
+  - D🔴🇦🇹hos[🎬🤖📺🎭]_dokng.com_ad2e47da
+  - D🔴🇸🇪hos[🤖📺🎪]_dokng.com_1ba3cfe0
+  - JP_Tokyo_UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED_Claude
+  - D🔴🇭🇷hos[🎬🤖📺🎭]_dokng.com_842b3339
+  - D🔴🇭🇺hos[🤖📺🎭🎪]_dokng.com_58d0afef
+  - D🔴🇵🇱hos[🎬🤖📺🎪]_dokng.com_6d895544
+  - D🔴🇵🇱hos[🎬🤖📺🎭]_dokng.com_31efa2ea
+  - D🔴🇳🇴hos[🎬🤖📺🎭]_dokng.com_8a01707d
+  - 152.42.170.187_Claude
+  - C🟠🇨🇭hos[🎬🤖📺🎭]_dokng.com_a74c39f7
+  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_e68b3244
+  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_02ba6e35
+  - 🇸🇬SG-91.243.81.78-4889
+  - D🔴🇸🇬hos[🎬🤖📺🎭]_dokng.com_ec84b940
+  - 🇮🇷伊朗丨yoyapai.com
+  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_0360a354
+  - 🇸🇬SG-45.135.228.193-4854
+  - D🔴🇸🇬hos[🤖✨🎞️🔍]_dokng.com_600fd6e2
+  - C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_f4e9aa61
+  - D🔴🇸🇬hos_dokng.com_9a3d7a66
+  - 🇸🇬SG-91.243.81.20-4885
+  - 🇫🇮_FI_芬兰
+  - 🇸🇬SG-81.28.13.180-4886
+  - 🇸🇬SG-91.243.81.248-4679
+  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_6bbe933a
+  - D🔴🇸🇬hos[🎬🤖📺🎭]_dokng.com_f29f736e
+  - C🟠🇱🇻hos[🎬🤖📺🎭]_dokng.com_5b5762e8
+  - 🇸🇬SG-91.243.81.152-4852
+  - 🇸🇬_新加坡_41
+  - 🇸🇬SG-45.135.228.189-4884
+  - 🇸🇬SG-91.243.81.128-4888
+  - D🔴🇧🇦hos[🎬🤖📺🎭]_dokng.com_38a27677
+  - C🟠🇷🇴hos[🎬🤖📺🎭]_dokng.com_cee0a31e
+  - D🔴🇱🇻hos[🎬🤖📺🎭]_dokng.com_80a4f8f5
+  - D🔴🇧🇬hos[🎬🤖📺🎭]_dokng.com_f517a03a
+  - 'Telgram: @vpnbaz-5aN0'
+  - 🇺🇸_美国_43
+  - 🇯🇵JP-154.36.158.197-0169
+  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_8125c2b7
+  - 🇳🇱_荷兰_30
+  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_0e37471c
+  - 🔥Join+Telegram:@Farah_VPN🟣-nbNt
+  - 🔥Join+Telegram:@Farah_VPN🟣-rZRq
   - D🔴🇭🇰hos[📺🎭🎪🎞️]_dokng.com_054bd55d
-  - C🟠🇮🇱hos[🎬🤖📺🎭]_dokng.com_b9fb82b7
   - D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_d21277d2
-  - 🔥Join+Telegram:@Farah_VPN🟣-6ybE
-  - D🔴🇷🇴hos[🎬📺🎭🎪]_dokng.com_309a5dd0
-  - C🟠🇩🇪hos[🎬🤖📺🎭]_dokng.com_db0b26fa
-  - 'Telgram: @vpnbaz-Lyef'
   - 巴西 041
-  - 🔥Join+Telegram:@Farah_VPN🟣-vMxk
-  - 🔥Join+Telegram:@Farah_VPN🟣-nzjV
+  - 🇭🇰 香港 | HKG 8
+  - A🟢🇨🇳res[📦]_dokng.com_a83d68e0
+  - C🟠🇮🇱hos[🎬🤖📺🎭]_dokng.com_b9fb82b7
+  - D🔴🇷🇴hos[🎬📺🎭🎪]_dokng.com_309a5dd0
   - C🟠🇵🇹hos[🎬🤖📺🎭]_dokng.com_2226fec1
-  - 🔥Join+Telegram:@Farah_VPN🟣-TbS6
-  - 🇪🇪_爱沙尼亚_34
+  - 🔥Join+Telegram:@Farah_VPN🟣-Edv2
+  - C🟠🇬🇷hos[🎬🤖📺🎭]_dokng.com_7f9fa854
+  - 🇱🇻LV拉脱维亚丨yoyapai.com
   - D🔴🇸🇬hos[🎬📺🎭🎪]_dokng.com_1b1556d8
-  - 🔥Join+Telegram:@Farah_VPN🟣-OHqt
+  - 🔥Join+Telegram:@Farah_VPN🟣-pMw9
+  - C🟠🇭🇰hos_dokng.com_099454ad
+  - 🔥Join+Telegram:@Farah_VPN🟣-g5Zo
+  - 🇳🇱_荷兰_17
+  - 🇦🇲[www.v2nodes.com] vless-AM-1...
+  - 🇭🇰_香港_38
+  - 美国 444
+  - 🔥Join+Telegram:@Farah_VPN🟣-Qhj3
+  - D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_3fb70d97
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
